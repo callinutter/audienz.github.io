@@ -21,7 +21,7 @@
         position: relative
       }
 
-      .centered p {
+      .centered div {
         text-align: center;
         margin: 0;
         position: absolute;
@@ -45,6 +45,22 @@
       .mailto {
         text-decoration: none;
         color: white;
+        padding-left: 20px;
+      }
+
+      .logo {
+        width: 150px;
+        float: left;
+        padding-right: 10px;
+        padding-top: 227px;
+        padding-bottom: 50px;
+      }
+
+      .logo-text {
+        font-weight: bold;
+        font-size: 60px;
+        padding-top: 200px;
+        float: left;
       }
 
     </style>
@@ -54,10 +70,11 @@
   </head>
   <body>
     <div class="centered">
-      <p>
-        audienz <br>
+      <div>
+        <img class="logo" src="images/logo.png"/>
+        <p class="logo-text">audienz</p><br>
         <a class="mailto" href="mailto:hello.audienz@gmail.com">hello.audienz@gmail.com</a>
-      </p>
+      </div>
     </div>
     <div class="credits">
       © audienz - Florian Pontalti & Pauline Schmiechen
