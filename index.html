@@ -17,18 +17,10 @@
       }
 
       .centered {
-        height: 10em;
-        position: relative
-      }
-
-      .centered div {
+        margin: auto;
+        width: 50%;
+        padding: 10px;
         text-align: center;
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        margin-right: -50%;
-        transform: translate(-50%, -50%)
       }
 
       .credits {
@@ -47,14 +39,21 @@
         color: white;
       }
 
+      .logo-and-text {
+        float: left;
+      }
+
       .logo {
         width: 150px;
         padding-top: 27px;
+        float: left;
+        padding-right: 20px;
       }
 
       .logo-text {
         font-weight: bold;
         font-size: 60px;
+        float: left;
       }
 
     </style>
@@ -64,11 +63,11 @@
   </head>
   <body>
     <div class="centered">
-      <div>
-        <img class="logo" src="images/logo.png"/>
-        <p class="logo-text">audienz</p><br>
+        <div class="logo-and-text">
+          <img class="logo" src="images/logo.png"/>
+          <p class="logo-text">audienz</p>
+        </div>
         <a class="mailto" href="mailto:hello.audienz@gmail.com">hello.audienz@gmail.com</a>
-      </div>
     </div>
     <div class="credits">
       © audienz - Florian Pontalti & Pauline Schmiechen
