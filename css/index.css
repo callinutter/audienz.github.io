@@ -51,16 +51,15 @@
       @media (max-width: 760px) {
 
         .logo-text {
-          margin-top: 12px;
-          font-size: 50px;
+          margin-top: 17px;
+          margin-left: 15px;
         }
 
         .logo {
-          width: 100px;
+          width: 120px;
         }
 
         .mailto {
-          font-size: 25px;
           padding-left: 15px;
         }
 
@@ -69,8 +68,8 @@
       @media (max-width: 400px) {
 
         .logo-text {
-          margin-top: 12px;
-          font-size: 50px;
+          margin-top: 16px;
+          font-size: 45px;
         }
 
         .logo {
