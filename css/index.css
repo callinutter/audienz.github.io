@@ -48,7 +48,7 @@
         padding-left: 35px;
       }
 
-      @media (max-width: 760px) {
+      @media screen and (max-width: 760px) {
 
         .logo-text {
           margin-top: 17px;
@@ -65,7 +65,7 @@
 
       }
 
-      @media (max-width: 400px) {
+      @media screen and(max-width: 400px) {
 
         .logo-text {
           margin-top: 16px;
