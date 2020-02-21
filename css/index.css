@@ -2,6 +2,9 @@
         height: 100%;
         background: linear-gradient(138deg, rgba(242,99,126,1) 0%, rgba(243,105,132,1) 46%, rgba(245,239,135,1) 100%); 
         background-repeat: no-repeat;
+        height: auto;
+        background-attachment: fixed;
+        background-size: cover;
         font-size: 30px; 
         color: white;
         font-family: 'Livvic', sans-serif;
@@ -23,6 +26,26 @@
         top: 50%;
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
+      }
+
+      .title {
+        color: white;
+        font-size: 45px;
+      }
+
+      .impressum-body {
+        text-align: center;
+        width: 100%;
+        padding-bottom: 250px;
+        font-size: 20px;
+      }
+
+      .footer-right {
+        float: right;
+        color: white;
+        text-decoration: none;
+        padding-right: 20px;
+        padding-left: 20px;
       }
 
       .logo {
@@ -61,6 +84,14 @@
 
         .mailto {
           padding-left: 15px;
+        }
+
+      }
+
+      @media screen and (max-width: 470px) {
+
+        .footer-right {
+          float: none;
         }
 
       }
