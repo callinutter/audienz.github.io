@@ -10,8 +10,11 @@
         font-family: 'Livvic', sans-serif;
       }
 
+      .logoleiste {
+        width: 100%;
+      }
+
       .credits {
-        text-align: center;
         background-color: #F2637E; 
         font-size: 15px;
         position: fixed;
@@ -19,6 +22,21 @@
         bottom: 0;
         left: 0;
         right: 0;
+      }
+
+      .social {
+        width:100%;
+        padding-left: 110px;
+      }
+
+      .social_icon a {
+        float: left;
+        padding: 25px;
+        margin-top: 25px;
+      }
+
+      .social_icon img {
+        width: 50px;
       }
 
       .centered {
@@ -36,7 +54,7 @@
       .impressum-body {
         text-align: center;
         width: 80%;
-        padding-bottom: 250px;
+        padding-bottom: 50px;
         font-size: 20px;
         margin-left: 10%;
         margin-right: 10%;
@@ -69,8 +87,8 @@
 
       .mailto {
         text-decoration: none;
-        color: white;
-        padding-left: 120px;
+        color: white;    
+        padding-left: 130px;
       }
 
       @media screen and (max-width: 760px) {
@@ -85,7 +103,11 @@
         }
 
         .mailto {
-          padding-left: 15px;
+          padding-left: 25px;
+        }
+
+        .social {
+          padding-left: 5px;
         }
 
       }
@@ -115,6 +137,10 @@
 
         .credits {
           font-size: 12px;
+        }
+
+        .social_icon a {
+          padding: 15px;
         }
 
       }
