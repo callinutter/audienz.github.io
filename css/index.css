@@ -85,6 +85,15 @@
         margin-bottom: 60px;
       }
 
+      .beta-link-div {
+        text-align: center;  
+      }
+
+      .beta-link {
+        color: white;  
+        text-decoration: none;
+      }
+
       .mailto {
         text-decoration: none;
         color: white;    
@@ -122,6 +131,9 @@
         .credits {
           text-align: center;
           float: none;
+        }
+        .beta-link {
+          font-size: 25px;
         }
 
       }
