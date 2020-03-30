@@ -119,6 +119,9 @@
         .social {
           padding-left: 5px;
         }
+        .centered {
+          max-width: 300px;
+        }
 
       }
 
