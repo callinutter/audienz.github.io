@@ -95,6 +95,10 @@
         text-decoration: none;
       }
 
+      .impressum-link {
+        color: white; 
+      }
+
       .mailto {
         text-decoration: none;
         color: white;    
