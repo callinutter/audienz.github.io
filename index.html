@@ -35,11 +35,9 @@
       <div class="logo-and-text">
         <img class="logo" src="images/audienz.app_logo_letters_white.png"/>
       </div><br>
-      <div class="beta-link-div">
-        <a class="beta-link" target="_blank" href="https://audienz-app-beta.netlify.com/">
-          Be the first to explore our <span style="text-decoration: underline">beta</span>.<br/> 100% free, 100% fun.
-        </a>
-      </div>
+      <button class="beta-link" onclick="exploreBeta()">
+        Explore our beta now
+      </button>
       <div class="social">
         <div class="social_icon">
           <a href="https://www.instagram.com/audienz.app/" target="_blank">
@@ -68,7 +66,7 @@
 
     <div class="credits">
      (c) audienz.app 030 UG (haftungsbeschränkt)
-      <a class="footer-right" href="impressum.html">Impressum</a>
+      <a class="footer-right" href="impressum.html">Impressum / Datenschutz</a>
       <a class="footer-right" href="agbs.html">AGBs</a>
     </div>
 
@@ -79,6 +77,12 @@
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
         gtag('config', 'UA-163157432-1');
+      </script>
+      <script>
+        function exploreBeta() {
+          fbq('track', 'Explore beta');
+          window.open("https://audienz-app-beta.netlify.com/", "_blank"); 
+        }
       </script>
   </body>
 </html>
