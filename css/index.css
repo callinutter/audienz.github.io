@@ -92,7 +92,7 @@
         border: solid 2px white;
         border-radius: 20px;
         background: white;
-        margin-left: 130px;     
+        margin-left: 120px;     
         height: 50px;
         text-decoration: none;
         font-size: 25px;
@@ -184,7 +184,7 @@
           width: 35px;
         }
         .beta-link {
-          margin-left: 10%;
+          margin-left: 7%;
         }
       }
 
