@@ -24,8 +24,7 @@
         window.onload = function() {
           const url = window.location.href;
           const id = url.split('?')[1];
-          console.log('audienz.app://--/listen?' + id);
-          window.location.href = 'audienz.app://--/listen?' + id;
+          window.location.replace('audienz.app://--/listen?' + id);
           return false;
         }
       </script>
