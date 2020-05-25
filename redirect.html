@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" type="text/css" content="width=device-width,initial-scale=1.0">
+    <title>audienz.app - Tell every story.</title>
+
+    <link href="css/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Livvic&display=swap" rel="stylesheet">
+
+  </head>
+  <body>
+    <div class="centered">
+
+    </div>
+
+    <div class="credits">
+     (c) audienz.app 030 UG (haftungsbeschränkt)
+      <a class="footer-right" href="impressum.html">Impressum / Datenschutz</a>
+      <a class="footer-right" href="agbs.html">AGBs</a>
+    </div>
+
+      <script>
+        window.onload = function() {
+          const url = window.location.href;
+          const id = url.split('?')[1];
+          console.log('audienz.app://--/listen?' + id);
+          window.location.href = 'audienz.app://--/listen?' + id;
+          return false;
+        }
+      </script>
+  </body>
+</html>
