@@ -11,7 +11,11 @@
   </head>
   <body>
     <div class="centered">
-
+      <div class="logo-and-text">
+        <img class="logo" src="images/audienz.app_logo_letters_white.png"/>
+      </div><br>
+      <button id="android-redirect" class="beta-link" onclick="linkToApp()">Open in audienz.app</button>
+      <div class="text">or</div>
     </div>
 
     <div class="credits">
@@ -24,8 +28,16 @@
         window.onload = function() {
           const url = window.location.href;
           const id = url.split('?')[1];
-          window.location.replace('audienz.app://--/listen?id=' + id);
+          window.location.replace('audienzapp://--/listen?id=' + id);
           return false;
+        }
+
+        linkToApp = function() {
+            const url = window.location.href;
+            const id = url.split('?')[1];
+            console.log('audienzapp://--/listen?id=' + id);
+            window.location.replace('audienz.app://--/listen?id=' + id);
+            return false;
         }
       </script>
   </body>
