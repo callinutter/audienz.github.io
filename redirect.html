@@ -28,14 +28,14 @@
         window.onload = function() {
           const url = window.location.href;
           const id = url.split('?')[1];
-          window.location.replace('audienz.app://audienzapp/--/listen?id=' + id);
+          window.location.replace('audienz.app://--/listen?id=' + id);
           return false;
         }
 
         linkToApp = function() {
             const url = window.location.href;
             const id = url.split('?')[1];
-            window.location.replace('audienz.app://audienzapp--/listen?id=' + id);
+            window.location.replace('audienz.app://--/listen?id=' + id);
             return false;
         }
       </script>
