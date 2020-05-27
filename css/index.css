@@ -14,6 +14,16 @@
         width: 100%;
       }
 
+      .link{
+        text-decoration: none;
+      }
+
+      .download_link {
+        margin-top: 20px;
+        align-items: center;
+        text-align: center;
+      }
+
       .credits {
         background-color: #F2637E; 
         font-size: 15px;
