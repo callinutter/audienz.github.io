@@ -149,6 +149,10 @@
 
       @media screen and (max-width: 760px) {
 
+        .link {
+          margin-left: 0px;
+        }
+
         .logo-text {
           margin-top: 17px;
           margin-left: 15px;
