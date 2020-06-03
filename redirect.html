@@ -37,7 +37,7 @@
           const url = window.location.href;
           const id = url.split('?')[1];
           if(!!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform)){
-            window.location.href = 'audienzapp:///listen?id=' + id;
+            window.location.href = 'audienzapp://listen?id=' + id;
           }
           return false;
         }
