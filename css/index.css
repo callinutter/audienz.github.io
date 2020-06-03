@@ -204,6 +204,13 @@
         .beta-link {
           margin-left: 7%;
         }
+
+        .centered {
+          transform: none;
+          top: 20%;
+          left: 20%;
+        }
+
       }
 
       @media screen and (max-width: 450px) {
