@@ -14,6 +14,19 @@
         width: 100%;
       }
 
+      .feedbackLink {
+        align-items: center;
+        text-align: center;
+        color: white;
+        margin-left: 30px;
+        font-size: 28px;
+      }
+
+      .feedback {
+        align-items: center;
+        text-align: center;
+      }
+
       .link{
         text-decoration: none;
         margin-left: 20px;
@@ -204,21 +217,31 @@
           float: left;
           margin-left: 25px;
         }
+
         .credits {
           text-align: center;
           float: none;
         }
+
         .social_icon a {
           padding: 10px;
         }
+
         .social_icon img {
           width: 35px;
         }
+
         .beta-link {
           margin-left: 13%;
         }
+
         .storeLinks {
           margin-left: 10px;
+        }
+
+        .feedbackLink {
+          font-size: 22px;
+          margin-left: 0;
         }
 
       }
