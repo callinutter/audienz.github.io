@@ -8,7 +8,7 @@
         background-size: cover;
         font-size: 30px; 
         color: white;
-        font-family: 'Livvic', sans-serif;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
       }
 
       .sidenav {
@@ -41,7 +41,7 @@
 
       .description_demo_bullet .bold {
         font-size: 25px;
-        font-weight: 600;
+        font-weight: 800;
         display: inline-block;
       }
 
@@ -322,14 +322,14 @@
 
       .boldText {
         font-family: 'Livvic', sans-serif;
-        font-weight: 600;
+        font-weight: 800;
         font-size: 38px;
         display: inline-block;
       }
 
       .boldTextSmall {
         font-family: 'Livvic', sans-serif;
-        font-weight: 600;
+        font-weight: 800;
         display: inline-block;
       }
 
@@ -341,7 +341,7 @@
         font-family: 'Livvic', sans-serif;
         background-color: rgba(242,99,126,1);
         border: none;
-        font-weight: 600;
+        font-weight: 800;
         padding: 8px;
         color: rgba(255,255,255,0.8);
         font-size: 16px;
