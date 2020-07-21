@@ -59,9 +59,10 @@
     </div>
 
     <div class="main">
+      <div id="get">
       <img class="main_logo" src="images/audienz_ws.png"/>
       <div class="section">
-      <div id="get" class="section">
+      <div class="section">
         <div class="description_text">
           <div class="boldText">audienz.app</div> enables everyone to become a true storyteller by instantly sharing their short stories with the most emotional medium of all time: <div class="boldTextSmall">your voice.</div>
         </div>
@@ -79,6 +80,8 @@
         </div>
         <div class="small_text">Available for Android and Apple devices</div>
       </div>
+    </div>
+  </div>
 
         <div id="trailer" class="section">
           <div class="trailer">
@@ -200,7 +203,7 @@ function onScroll(event){
     $('#sidenav a').each(function () {
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
-        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() + 40 > scrollPos) {
             console.log($(currLink.attr("href")));
             currLink.addClass("active");
         }
