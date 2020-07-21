@@ -201,6 +201,7 @@ function onScroll(event){
         var currLink = $(this);
         var refElement = $(currLink.attr("href"));
         if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            console.log($(currLink.attr("href")));
             currLink.addClass("active");
         }
     });
