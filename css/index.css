@@ -351,6 +351,7 @@
         float: right;
         line-height: 20px;
         overflow: visible;
+        margin: auto;
       }
 
       .e-mail-input::placeholder {
