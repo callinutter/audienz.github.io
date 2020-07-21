@@ -284,6 +284,7 @@
         border-width: 3px;
         border-color: transparent;
         margin-bottom: 20px;
+        line-height: 18px;
       }
 
       .e-mail-input {
