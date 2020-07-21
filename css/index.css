@@ -676,6 +676,10 @@
           line-height: 18px;
         }
 
+        .team_image {
+          margin-right: 0;
+        }
+
       }
 
       @media screen and (max-width: 460px) {
@@ -683,6 +687,10 @@
         .e-mail-button {
           font-size: 12px;
           padding: 11px;
+        }
+
+        .slideshow-container {
+          margin-top: 10px;
         }
 
         .small_text {
