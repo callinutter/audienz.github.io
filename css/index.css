@@ -295,6 +295,7 @@
         font-family: 'Livvic', sans-serif;
         color: rgba(243,105,132,1);
         min-width: 200px;
+        line-height: 18px;
       }
 
       /* Fading animation */
@@ -348,12 +349,15 @@
         outline:none;
         margin-right: 2px; 
         float: right;
+        line-height: 20px;
+        overflow: visible;
       }
 
       .e-mail-input::placeholder {
         color: rgba(242,99,126,1);
         font-family: 'Livvic', sans-serif;
         font-size: 18px;
+        overflow: visible;
       }
 
       .title {
@@ -622,6 +626,8 @@
         background-color: rgba(242,99,126,1);
         position: fixed;
         top: 0;
+        left: 0;
+        padding-left: 5px;
         width: 100%;
         padding-top: 5px;
         padding-bottom: 5px;
