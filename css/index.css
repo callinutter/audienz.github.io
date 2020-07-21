@@ -672,6 +672,10 @@
           font-size: 12px;
         }
 
+        .e-mail-button {
+          line-height: 18px;
+        }
+
       }
 
       @media screen and (max-width: 460px) {
