@@ -1,5 +1,6 @@
  html, body {
         height: 100%;
+        position: relative;
         background: linear-gradient(138deg, rgba(242,99,126,1) 0%, rgba(243,105,132,1) 46%, rgba(245,239,135,1) 100%); 
         background-repeat: no-repeat;
         height: auto;
@@ -10,8 +11,112 @@
         font-family: 'Livvic', sans-serif;
       }
 
+      .sidenav {
+        margin-left: 50px;
+        height: 100%;
+        width: 250px;
+        margin-top: 15px;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        padding-top: 20px;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .description_demo {
+        font-size: 20px;
+        width: 100%;   
+      }
+
+      .topnav {
+        display: none;
+      }
+
+      .description_demo_bullet {
+        margin-bottom: 30px;
+      }
+
+      .description_demo_bullet .bold {
+        font-size: 25px;
+        font-weight: 600;
+        display: inline-block;
+      }
+
+      .slideshow-container {
+        float: right;
+        margin-left: 30px;
+      }
+
+      .contact-us {
+        align-items: center;
+        text-align: center;
+      }
+
+      .contact-link {
+        margin: 20px;
+      }
+
+      .contact-mail {
+        margin-top: 25px;
+      }
+
+      .main {
+        margin-left: 290px;
+        padding: 0px 10px;
+        margin-bottom: 60px;
+      }
+
+      .team_description {
+        overflow: hidden;
+        font-size: 22px;
+      }
+
+      .section {
+        background-color: rgba(255,255,255,0.1);
+        border-radius: 20px;
+        margin: 20px;
+        margin-bottom: 35px;
+        padding: 10px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 20px;
+        overflow: hidden;
+        box-shadow: 0 2px 16px rgba(0,0,0,.08);
+      }
+
+      .sidenav a:hover, .sidenav .active {
+        margin-left: 15px;
+      }
+
+      .sidenav .active::before {
+        content: "→ ";
+      }
+
+      .sidenav a {
+        padding: 6px 8px 6px 16px;
+        text-decoration: none;
+        font-size: 25px;
+        color: white;
+        display: block;
+      }
+
+      .nav_logo {
+        margin-left: 20px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        width: 80px;
+      }
+
+      .nav_logo_mobile {
+        width: 30px;
+        padding-top: 4px;
+      }
+
       .playerControlArea {
-        border: solid 1px;
+        border: solid 2px;
         padding: 15px;
         border-radius: 20px;
       }
@@ -25,6 +130,7 @@
         border-radius: 20px;
         text-align: center;
         margin-bottom: 20px;
+        box-shadow: 0 2px 16px rgba(0,0,0,.08);
       }
 
       .playerControlButton {
@@ -40,13 +146,45 @@
         text-align: center;
         transition: transparent, 
         transform 150ms ease;
+        outline: none;
         -webkit-appearance: none;
         -moz-appearance: none;
+      }
+
+      .activePlay {
+            background-color: rgba(245,239,135,1);
+            border-radius: 50px;
+      }
+
+      .small_text {
+        font-size: 16px;
+        float: right;
+        color: rgba(255,255,255,0.6);
+      }
+
+      .footer-right-container {
+        float: right;
+      }
+
+      .nav_bars {
+        width: 24px;
+        height: 24px;
+        padding-top: 6px;
+      }
+
+      .store_image {
+        width: 140px;
+        box-shadow: 0 2px 16px rgba(0,0,0,.08);
+      }
+
+      .mockup {
+        width: 250px;
       }
 
       .playerControls {
         width: 50px;
         height: 50px;
+        margin-top: 5px;
       }
 
       .logoleiste {
@@ -68,6 +206,16 @@
 
       .link{
         text-decoration: none;
+      }
+
+      .aboutus {
+        overflow: hidden;
+      }
+
+      .team_image {
+        width: 300px;
+        float: left;
+        margin-right: 30px;
       }
 
       .download_link {
@@ -98,13 +246,6 @@
         margin-top: 20px;
       }
 
-      .storeLinks {
-        align-items: center;
-        text-align: center;
-        margin-left: auto;
-        margin-right: auto;
-      }
-
       .social {
         width:100%;
         padding-left: 60px;
@@ -121,12 +262,98 @@
         width: 50px;
       }
 
+      .social_image {
+        width: 40px;
+      }
+
       .centered {
         position: absolute;
         top: 50%;
         max-width: 500px;
         left: 50%;
         transform: translateX(-50%) translateY(-50%);
+      }
+
+      .e-mail-form {
+        background-color: rgba(255,255,255,0.7);
+        width: 50%;
+        height: 36px;
+        border-radius: 10px;
+        box-shadow: 0 2px 16px rgba(0,0,0,.08);
+        border-style: solid;
+        border-width: 3px;
+        border-color: transparent;
+        margin-bottom: 20px;
+      }
+
+      .e-mail-input {
+        margin-left: 10px;
+        float: left;
+        margin-top: 10px;
+        background-color: transparent;
+        border: none;
+        font-family: 'Livvic', sans-serif;
+        color: rgba(243,105,132,1);
+        min-width: 200px;
+      }
+
+      /* Fading animation */
+      .fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 0.5s;
+        animation-name: fade;
+        animation-duration: 0.5s;
+      }
+
+      @-webkit-keyframes fade {
+        from {opacity: .8} 
+        to {opacity: 1}
+      }
+
+      @keyframes fade {
+        from {opacity: .8} 
+        to {opacity: 1}
+      }
+
+      .description_text {
+        margin-bottom: 30px;
+      }
+
+      .boldText {
+        font-family: 'Livvic', sans-serif;
+        font-weight: 600;
+        font-size: 38px;
+        display: inline-block;
+      }
+
+      .boldTextSmall {
+        font-family: 'Livvic', sans-serif;
+        font-weight: 600;
+        display: inline-block;
+      }
+
+      .e-mail-input:focus{
+        outline: none;
+      }
+
+      .e-mail-button {
+        font-family: 'Livvic', sans-serif;
+        background-color: rgba(242,99,126,1);
+        border: none;
+        font-weight: 600;
+        padding: 8px;
+        color: rgba(255,255,255,0.8);
+        font-size: 16px;
+        border-radius: 5px;
+        outline:none;
+        margin-right: 2px; 
+        float: right;
+      }
+
+      .e-mail-input::placeholder {
+        color: rgba(242,99,126,1);
+        font-family: 'Livvic', sans-serif;
+        font-size: 18px;
       }
 
       .title {
@@ -143,12 +370,24 @@
         margin-right: 10%;
       }
 
+      .main_logo {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        margin-top: 50px;
+        margin-bottom: 20px;
+      }
+
       .footer-right {
-        float: right;
         color: white;
         text-decoration: none;
         padding-right: 20px;
         padding-left: 20px;
+      }
+
+      .footer-right:hover {
+        color: rgba(245,239,135);
       }
 
       .text {
@@ -226,10 +465,109 @@
       .mailto {
         text-decoration: none;
         color: white;    
-        padding-left: 130px;
       }
 
-      @media screen and (max-width: 760px) {
+      .mobile-container {
+        max-width: 480px;
+        margin: auto;
+        background-color: #555;
+        height: 500px;
+        color: white;
+        border-radius: 10px;
+      }
+
+      .topnav {
+        display: none;
+      }
+
+      #myLinks {
+        float: left;
+        margin-top: 5px;
+      }
+
+      .topnav #myLinks {
+        display: none;
+      }
+
+      .btn.active {
+        color: rgba(242,99,126,1);
+      }
+
+      .btn {
+        float: left;
+        color: white;
+        padding: 14px 16px;
+        text-decoration: none;
+        font-size: 17px;
+      }
+
+      .topnav a.icon {
+        float: right;
+        padding-right: 20px;
+      }
+
+      .active {
+        background-color: rgba(245,239,135,1);
+        border-radius: 10px;
+      }
+
+      @media screen and (max-width: 1300px) {
+
+        .sidenav {
+          margin-left: 10px;
+          width: 200px;
+        }
+
+        .main {
+          margin-left: 200px;
+        }
+
+        .e-mail-form {
+          width: calc(100% - 10px);
+        }
+
+        .storeLinks {
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+        }
+
+        .main_logo { 
+          width: 60%;
+        }
+
+        .team_image {
+          float: none;
+        }
+
+        .image_container {
+          float: none;
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+          align-items: center;
+        }
+      }
+
+      @media screen and (max-width: 850px) {
+
+        .e-mail-input::placeholder {
+          font-size: 14px;
+          margin-top: 11px;
+        }
+
+        .e-mail-input {
+          min-width: 100px;
+        }
+
+        .main_logo {
+          margin-top: 60px;
+        }
+
+        .e-mail-button {
+          font-size: 14px;
+          padding: 9px;
+        }
 
         .link {
           margin-left: 0px;
@@ -245,7 +583,8 @@
         }
 
         .mailto {
-          padding-left: 25px;
+          padding-left: 0px;
+          font-size: 22px;
         }
 
         .social {
@@ -268,24 +607,94 @@
           font-size: 16px;
           height: 35px;
         }
+
+      .sidenav {
+        display: none;
       }
 
-      @media screen and (max-width: 460px) {
+      .section {
+        margin: 5px;
+        margin-bottom: 15px;
+      }
 
-        .footer-right {
-          padding-right: 30px;
-          padding-left: 30px;
-          float: left;
-          margin-left: 25px;
+      .topnav {
+        display: block;
+        background-color: rgba(242,99,126,1);
+        position: fixed;
+        top: 0;
+        width: 100%;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        z-index: 10000;
+      }
+
+      .main {
+        margin-left: 0;
+      }
+    }
+
+      @media screen and (max-width: 600px) {
+
+        .footer-right-container {
+          padding-top: 5px;
+          float: none;
         }
 
-        .logo-top {
-          margin-top: 10%;
+        .footer-right {
+          float: none;
+          padding: 0;
+          margin: 0;
+          padding-right: 15px;
+        }
+
+        .slideshow-container {
+          margin-left: auto;
+          margin-right: auto;
+          align-items: center;
+          text-align: center;
+          float: none;
+        }
+
+        .main {
+          margin-bottom: 80px;
         }
 
         .credits {
           text-align: center;
           float: none;
+          font-size: 12px;
+        }
+
+      }
+
+      @media screen and (max-width: 460px) {
+
+        .e-mail-button {
+          font-size: 12px;
+          padding: 11px;
+        }
+
+        .small_text {
+          text-align: center;
+          margin-left: auto;
+          margin-right: auto;
+          float: none;
+        }
+
+        .main_logo {
+          width: 80%;
+        }
+
+        .boldText {
+          font-size: 33px;
+        }
+
+        body {
+          font-size: 25px;
+        }
+
+        .logo-top {
+          margin-top: 10%;
         }
 
         .social_icon a {
@@ -309,6 +718,18 @@
 
       @media screen and (max-width: 450px) {
 
+        .main {
+          padding: 0px;
+          margin-bottom: 80px;
+        }
+
+        .section {
+          padding-top: 5px;
+          padding-bottom: 10px;
+          padding-left: 5px;
+          padding-right: 5px;
+        }
+
         .logo-text {
           margin-top: 16px;
         }
@@ -319,15 +740,24 @@
 
         .mailto {
           font-size: 20px;
-          padding-left: 15%;
-        }
-
-        .credits {
-          font-size: 12px;
         }
 
         .beta-link {
           font-size: 13px;
         }
 
+        .contact-us {
+          margin-top: 10px;
+        }
+
+      }
+
+      @media screen and (max-width: 320px) {
+        .e-mail-input {
+          margin-left: 5px;
+        }
+
+        .team_image {
+          width: 265px;
+        }
       }
