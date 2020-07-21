@@ -89,6 +89,7 @@
 
       .sidenav a:hover, .sidenav .active {
         margin-left: 15px;
+        font-weight: 800;
       }
 
       .sidenav .active::before {
@@ -288,15 +289,13 @@
       }
 
       .e-mail-input {
-        margin-left: 10px;
-        float: left;
-        margin-top: 10px;
+        margin: auto;
         background-color: transparent;
         border: none;
         font-family: 'Livvic', sans-serif;
         color: rgba(243,105,132,1);
         min-width: 200px;
-        line-height: 18px;
+        line-height: 30px;
       }
 
       /* Fading animation */
