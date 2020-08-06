@@ -46,7 +46,7 @@
         window.onload = async function() {
           const url = window.location.href;
           const id = url.split('?')[1];
-          let response = await fetch('https://audienz-beta-2.herokuapp.com/audios/' + id);
+          let response = await fetch('https://audienzapp.herokuapp.com/audios/' + id);
           if(response.ok){
             let json = await response.json();
             let url = json.audio_file;
@@ -67,7 +67,7 @@
               window.location.href = 'audienzapp://listen?id=' + id;
             }
             else{
-              window.location.replace('audienzapp://listen?id=' + id);
+              window.location.replace('audienzapp.com://listen?id=' + id);
             }
             return false;
         }
