@@ -26,6 +26,12 @@
         flex-direction: column;
       }
 
+      .storeLinks {
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+      }
+
       .description_demo {
         font-size: 20px;
         width: 100%;   
@@ -529,12 +535,6 @@
 
         .e-mail-form {
           width: calc(100% - 10px);
-        }
-
-        .storeLinks {
-          margin-left: auto;
-          margin-right: auto;
-          text-align: center;
         }
 
         .main_logo { 
