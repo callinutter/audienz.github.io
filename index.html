@@ -83,6 +83,7 @@
             <div class="centered-redirect">
               <div class="audio_player">
                 <audio id="player" src="ressources/pitchdeck_teaser_audienz.app_mixdown.mp3"></audio>
+              </div>
                   <div class="playerControlArea">
                     <div id="audio_title" class="audio_title"></div>
                     <div id="audio_author" class="audio_author"></div>
@@ -96,7 +97,6 @@
             </div>
             <div>The sound of <div class="boldTextSmall">audienz.app.</div></div>
           </div>
-        </div>
 
       <div id="demo" class="section">
         <div class="slideshow-container">
@@ -215,33 +215,6 @@ function onScroll(event){
         }
     });
 }
-
-    // style e-mail form on focus
-    var input = document.getElementById("e-mail-input");
-    var form = document.getElementById("e-mail-form");
-    input.addEventListener("focus", function () {
-      form.style.borderWidth = '3px';  
-      form.style.borderColor = 'white';
-      form.style.borderStyle = 'solid';
-    });
-    input.addEventListener("blur", function () {
-      form.style.borderWidth = '3px';  
-      form.style.borderColor = 'transparent';
-      form.style.borderStyle = 'solid';
-    });
-
-    // submit-button email for   
-    document.getElementById("e-mail-button").addEventListener("click", function (e) {
-      e.preventDefault();
-      const scriptURL = 'https://api.apispreadsheets.com/data/752/'
-      const form = document.forms['e-mail-form']
-      fetch(scriptURL, { method: 'POST', body: new FormData(form), mode: 'no-cors'})
-        .then(response => console.log('Success!', response))
-        .catch(error => console.error('Error!', error.message))
-
-      document.getElementById("e-mail-input").value = "";
-      return false;
-    });
 
     // slider
     var slideIndex = 0;
