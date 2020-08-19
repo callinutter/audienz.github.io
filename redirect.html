@@ -52,7 +52,7 @@
           let id = url.split('?')[1];
           if (id.indexOf("&") >= 0) {
             console.log("hier")
-            id = id.substr(0, id.indexOf("&") - 1);
+            id = id.substr(0, id.indexOf("&"));
           }
           console.log(id);
           let response = await fetch('https://audienzapp.herokuapp.com/audios/' + id);
