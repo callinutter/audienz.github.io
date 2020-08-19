@@ -51,6 +51,7 @@
           const url = window.location.href;
           let id = url.split('?')[1];
           if (id.indexOf("&") >= 0) {
+            console.log("hier")
             id = id.substr(0, id.indexOf("&") - 1);
           }
           console.log(id);
