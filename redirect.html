@@ -55,7 +55,7 @@
             id = id.substr(0, id.indexOf("&"));
           }
           console.log(id);
-          let response = await fetch('https://audienzapp.herokuapp.com/audios/' + id);
+          let response = await fetch('https://audienzappbackend.herokuapp.com/audios/' + id);
           if(response.ok){
             let json = await response.json();
             let url = json.audio_file;
