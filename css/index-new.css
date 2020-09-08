@@ -3,16 +3,17 @@ body {
   font-family: 'Poppins', sans-serif;
   margin:0;
   height: 100%;
+  background-color: rgba(242,99,126,1);
 }
 
 .pink-background {
   background-color: rgba(242,99,126,1);
-  height: 100%;
   position: absolute;
+  width: 100%;
 }
 
 .centered-redirect {
-  margin-top: 50px;
+  margin-top: 120px;
   display: 'flex';
   flex-direction: 'row';
   height: 100%;
@@ -20,35 +21,82 @@ body {
   margin-right: 10%;
 }
 
+.descriptionRedirect {
+  height: 123px;
+  width: 400px;
+  color: #FFFFFF;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 26px;
+  line-height: 48px;
+  margin-bottom: 45px;
+}
+
 .headingRedirect {
+  margin-top: 20px;
+  max-width: 330px;
   color: white;
-  font-size: 35px;
-  font-weight: 600;
-  padding-bottom: 25px;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 50px;
+  font-weight: 900;
+  line-height: 62px;
+  margin-bottom: 36px;
 }
 
 .audio_author {
+  opacity: 0.7;
   color: white;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 20px;
+  margin-top: 15px;
 }
 
 .audio_duration {
   color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 13px;
+  margin-bottom: 45px;
 }
 
 .audio_title {
-  font-weight: 600;
   color: white;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+}
+
+.playerControlArea {
+  text-align: center;
+  align-items: center;
+  justify-content: center;
 }
 
 .logo-top {
+  background-color: rgba(242,99,126,1);
+}
+
+.playerControlButton.play {
+  padding-top: 110px;
+  display: inline-block;
+  padding-bottom: 40px;
+}
+
+.playerControlButton.stop {
+  padding-top: 110px;
+  display: none;
+  padding-bottom: 40px;
 }
 
 .audio_player {
   background-color: #3D4556;
   border-radius: 10px;
-  padding: 50px 20px 50px 20px;
+  width: 400px;
+  height: 500px;
   margin-right: 50px;
-  box-shadow: 10px 15px 20px -15px #111;
+  box-shadow: 0 22px 92px 8px rgba(172,31,58,0.64);
+  margin-bottom: 45px;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
 }
 
 .storeLinks {
@@ -201,18 +249,64 @@ body {
   padding-top: 20px;
 }
 
-.left, .right {
+.right {
   float: left;
   width: 50%;
 } 
+
+.left {
+  float: left;
+  width: 40%;
+  margin-right: 5%;
+  margin-left: 5%;
+}
 
 .mockup {
   width: 250px;
   margin-left: 100px;
 }
 
-.storeLinks {
-  padding-bottom: 30px;
+.storeLinksRedirect {
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.share-icon {
+  width: 20px;
+  height: 20px;
+  margin-left: 10px;
+}
+
+.underline {
+  border-bottom: 1px solid white;
+}
+
+.share {
+  cursor: pointer;
+  height: 21px;
+  width: 58px;
+  color: #FFFFFF;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 20px;
+  font-weight: 800;
+  line-height: 31px;
+  text-align: center;
+  border-bottom: 1px solid white;
+  margin-left: 150px;
+
+}
+
+.deepLink {
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: white;
+  height: 21px;
+  opacity: 0.8;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 31px;
 }
 
 .link {
@@ -362,3 +456,83 @@ body {
 .bold-text {
   font-weight: 600;
 }
+
+.share_button {
+  display: inline-block;
+}
+
+@media screen and (max-width: 1200px) {
+
+  .left, .right {
+    float: none;
+    margin: 0;
+  }
+
+  .left {
+    top: 0;
+    width: 100%;
+  }
+
+  .right {
+    width: 80%;
+    margin-left: 10%;
+    text-align: center;
+  }
+
+  .centered-redirect {
+    margin: 0;
+  }
+
+  .logo-top {
+    background-color: #3D4556;
+  }
+
+  .storeLinksRedirect {
+    padding-bottom: 15px;
+  }
+
+  #contact {
+    width: 100%;
+    left: 0;
+    position: relative;
+  }
+
+  .share_button {
+    display: none;
+  }
+
+  .headingRedirect {
+    text-align: center;
+    align-self: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .imprint-link a.footer-left {
+    float: left;
+    padding-left: 20px;
+  }
+
+  .imprint-link a.footer-right {
+    float: right;
+  }
+
+  .imprint-link.footer {
+    padding-top: 70px;
+  color: white;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
+  font-size: 16px;
+  font-weight: 800;
+  }
+
+  .audio_player {
+    width: 100%;
+    border-radius: 0;
+    box-shadow: 0 22px 92px -92px rgba(172,31,58,0.64);
+    border-bottom-left-radius: 40px;
+    border-bottom-right-radius: 40px;
+  }
+
+}
+
+@media screen and (max-width: 370px) {

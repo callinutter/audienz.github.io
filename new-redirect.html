@@ -7,6 +7,7 @@
     <link rel="icon" href="images/audienz_Bildmarke_not_transparent.png">
     <link href="css/index-new.css" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&display=swap" rel="stylesheet">
 
     <meta property="og:image" content="images/audienz_4c.png" />
 
@@ -23,22 +24,22 @@
           <div class="audio_player">
             <audio id="player" src=""></audio>
               <div class="playerControlArea">
-                <button class="playerControlButton" onclick="document.getElementById('player').play()"><img src="images/play.png" class="playerControls"/></button> 
-                <button class="playerControlButton" id="" onclick="document.getElementById('player').pause()"><img src="images/pause.png" class="playerControls"/></button> 
+                <button class="playerControlButton play" id="play" onclick="{document.getElementById('player').play(); document.getElementById('stop').style.display='inline-block'; document.getElementById('play').style.display='none';}"><img src="images/play.png" class="playerControls"/></button> 
+                <button class="playerControlButton stop" id="stop" onclick="{document.getElementById('player').pause(); document.getElementById('play').style.display='inline-block'; document.getElementById('stop').style.display='none';}"><img src="images/pause.png" class="playerControls"/></button> 
                 <div id="audio_duration" class="audio_duration"></div>
                 <div id="audio_title" class="audio_title"></div>
                 <div id="audio_author" class="audio_author"></div>
               </div>
             </div>
-            <a href="">Share</a>
+            <a class="share_button" onclick="window.open(window.location.href, '_blank', 'location=yes');">
+              <span class="share">share</span>
+              <image class="share-icon" src="images/share_2.png"/>
+            </a>
           </div>
           <div class="right">
             <div class="headingRedirect">Want to hear more?</div>
-            <span class="description">or share your own story?</span>
-            <span class="description">Join our storyteller community by downloading audienz.app</span>
-            <button id="android-redirect" class="beta-link" onclick="linkToApp()">Open in mobile app</button>
-            <div class="text">or</div>
-            <div class="storeLinks">
+            <span class="descriptionRedirect">or share your own story? Join our storyteller community by downloading audienz.app</span>
+            <div class="storeLinksRedirect">
               <a class="link" href="https://play.google.com/store/apps/details?id=audienzapp.com" target="_blank">
                 <img src="images/google-play-store.png" alt="Google Play Store Batch" width="150"/>
               </a>
@@ -46,11 +47,16 @@
                 <img src="images/app-store.png" alt="Apple Store Batch" width="150" />
               </a>
             </div>
+            <div class="deepLink">
+              <button id="android-redirect" class="deepLink" onclick="linkToApp()">
+                or <span class="underline">open voicestory in app</span>
+              </button>
+            </div>
           </div>
           <div id="contact">
             <div class="imprint-link footer">
-                <a href="">Imprint / Data Policy</a>
-                <a href="">AGBs</a>
+                <a class="footer-left" href="">Imprint / Data Policy</a>
+                <a class="footer-right" href="">AGBs</a>
             </div>
           </div>
       </div>
@@ -72,7 +78,7 @@
             let duration = json.audio_duration;
             document.getElementById("player").src = url;
             document.getElementById("audio_title").innerHTML = title;
-            document.getElementById("audio_author").innerHTML = author;
+            document.getElementById("audio_author").innerHTML = "by " + author;
             document.getElementById("audio_duration").innerHTML = duration;
           }
         }
