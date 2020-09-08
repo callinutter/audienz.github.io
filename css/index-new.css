@@ -1,0 +1,364 @@
+body {
+  /* reuglar: 400; bold: 600;*/
+  font-family: 'Poppins', sans-serif;
+  margin:0;
+  height: 100%;
+}
+
+.pink-background {
+  background-color: rgba(242,99,126,1);
+  height: 100%;
+  position: absolute;
+}
+
+.centered-redirect {
+  margin-top: 50px;
+  display: 'flex';
+  flex-direction: 'row';
+  height: 100%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.headingRedirect {
+  color: white;
+  font-size: 35px;
+  font-weight: 600;
+  padding-bottom: 25px;
+}
+
+.audio_author {
+  color: white;
+}
+
+.audio_duration {
+  color: white;
+}
+
+.audio_title {
+  font-weight: 600;
+  color: white;
+}
+
+.logo-top {
+}
+
+.audio_player {
+  background-color: #3D4556;
+  border-radius: 10px;
+  padding: 50px 20px 50px 20px;
+  margin-right: 50px;
+  box-shadow: 10px 15px 20px -15px #111;
+}
+
+.storeLinks {
+          margin-left: auto;
+          margin-right: auto;
+          text-align: center;
+      }
+
+.text {
+        color: white;
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        font-size: 20px;
+      }
+
+.beta-link {
+  margin-top: 10px;
+  margin-bottom: 10px;
+        text-align: center; 
+        border: solid 2px white;
+        border-radius: 20px;
+        background: white;   
+        height: 50px;
+        text-decoration: none;
+        font-size: 25px;
+        color: rgba(242,99,126,1);
+        width: 100%;
+        font-family: 'M PLUS Rounded 1c', sans-serif;
+      }
+
+      .beta-link:hover {
+         background: rgba(242,99,126,1);
+         color: white;
+      }
+
+      .beta-link:active {
+        outline: 0;
+        background: rgba(242,99,126,1);
+        color: white;
+      }
+
+      .beta-link:focus {
+        outline: 0;
+        background: rgba(242,99,126,1);
+        color: white;
+      }
+
+.logo-redirect {
+  width: 200px;
+  margin-left: 5%;
+  margin-top: 5%;
+}
+
+.playerControlButton {
+  display: inline-block;
+        border: none;
+        margin: 0;
+        text-decoration: none;
+        background: transparent;
+        color: #ffffff;
+        font-family: sans-serif;
+        font-size: 1rem;
+        cursor: pointer;
+        text-align: center;
+        transition: transparent, 
+        transform 150ms ease;
+        outline: none;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+}
+
+.playerControls {
+  width: 100px;
+  height: 100px;
+}
+
+.topnav {
+  background-color: rgba(242,99,126,1);
+  color: white;
+  padding-top: 30px;
+  width: 100%;
+  padding-left: 50px;
+}
+
+.marginLeft {
+  margin-right: -20px;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  color: white;
+  text-align: center;
+  padding: 0 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.left-side {
+  float: left;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  color: rgba(245,239,135,1);
+}
+
+.right-side {
+  text-align: right;
+  align-self: center;
+  margin-right: 100px;
+  height: 50px;
+  vertical-align: middle;
+}
+
+/* Add a color to the active/current link */
+.right-side .language-select {
+  color: rgba(245,239,135,1);
+  margin-top: 4px;
+  font-size: 12px;
+  color: rgba(255,255,255,0.5);
+}
+
+.nav_logo {
+  width: 50px;
+  vertical-align: middle;
+  margin-top: -3px;
+}
+
+.pink-back{
+  background-color: rgba(242,99,126,1);
+}
+
+#home {
+  background-color: rgba(242,99,126,1);
+  color: white;
+  margin-left: -300px;
+  margin-right: -300px;
+  min-width:500px;
+  min-height:600px;
+  border-bottom-left-radius:50%;
+  border-bottom-right-radius:50%;
+  box-shadow: 0px 15px 20px -15px #111;
+  overflow:auto;
+}
+
+.inner {
+  margin-left: 450px;
+  margin-right: 450px;
+  padding-top: 20px;
+}
+
+.left, .right {
+  float: left;
+  width: 50%;
+} 
+
+.mockup {
+  width: 250px;
+  margin-left: 100px;
+}
+
+.storeLinks {
+  padding-bottom: 30px;
+}
+
+.link {
+  text-decoration: none;
+}
+
+.store_image {
+  width: 120px;
+  padding-right: 20px;
+}
+
+.home-footer {
+  margin-top: 170px;
+}
+
+.horizontal-bootom-line {
+  border-bottom: solid;
+  border-bottom-width: 2px;
+  border-bottom-color: rgba(255,255,255,0.3);
+  width: 95px;
+  float: left;
+}
+
+.imprint-link a {
+  text-decoration: none;
+  color: rgba(255,255,255,0.3);
+  font-size: 12px;
+  padding-right: 20px;
+  float: right;
+}
+
+.learn-more {
+  border-bottom: 1px solid #fff;
+  width: 95px;
+}
+
+#features {
+  min-height:550px;
+  padding-top: 70px;
+  padding-left: 100px;
+  padding-right: 100px;
+}
+
+#about {
+  padding-top: 120px;
+  min-height:480px;
+  background-color: rgba(242,99,126,1);
+  text-align: center;
+}
+
+#features2 {
+  background-color: white;
+  margin-left: -300px;
+  margin-right: -300px;
+  min-width:500px;
+  min-height:700px;
+  border-bottom-left-radius:50%;
+  border-bottom-right-radius:50%;
+  box-shadow: 0px 15px 20px -15px #111;  
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-top: 100px;
+}
+
+.start-now {
+  padding-top: 30px;
+  color: rgba(242,99,126,1);
+  font-size: 20px;
+  border-bottom: 1px solid rgba(242,99,126,1);
+  width: 100px;
+  font-weight: 600;
+}
+
+.e-mail-input {
+  padding-top: 40px;
+}
+
+.form-input {
+  background: none;
+  border: none;
+  height: 30px;
+  padding-bottom: 5px;
+  border-bottom: solid 1px white;
+  color: white;
+  min-width: 250px;
+}
+
+.form-input:focus {
+  outline-width: 0;
+}
+
+.form-input::placeholder {
+  color: white;
+  font-size: 20px;
+}
+
+.form-button {
+  background: white;
+  border: none;
+  font-size: 18px;
+  margin-left: 15px;
+  color: rgba(242,99,126,1);
+  font-weight: 600;
+  border-radius: 5px;
+  padding: 12px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.form-button:hover {
+  color: rgba(245,239,135,1);
+}
+
+.description {
+  color: white;
+  font-size: 20px;
+}
+
+.description.black {
+  color: #3D4556;
+}
+
+#contact {
+  min-height:100px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+}
+
+.heading {
+  color: white;
+  font-size: 35px;
+  font-weight: 600;
+  padding-bottom: 25px;
+  padding-top: 60px;
+}
+
+.heading.black {
+  color: #3D4556;
+}
+
+.imprint-link.footer {
+  padding-top: 50px;
+  padding-right: 30px;
+}
+
+.bold-text {
+  font-weight: 600;
+}
