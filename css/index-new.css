@@ -12,8 +12,12 @@ body {
   width: 100%;
 }
 
+.share-mobile {
+  display: none;
+}
+
 .centered-redirect {
-  margin-top: 120px;
+  margin-top: 40px;
   display: 'flex';
   flex-direction: 'row';
   height: 100%;
@@ -296,6 +300,10 @@ body {
 
 }
 
+.link {
+  margin-right: 10px;
+}
+
 .deepLink {
   cursor: pointer;
   background: transparent;
@@ -527,12 +535,20 @@ body {
 
   .audio_player {
     width: 100%;
+    height: 350px;
     border-radius: 0;
     box-shadow: 0 22px 92px -92px rgba(172,31,58,0.64);
     border-bottom-left-radius: 40px;
     border-bottom-right-radius: 40px;
   }
 
-}
+  .playerControlButton.play, .playerControlButton.stop {
+    padding-top: 50px;
+    padding-bottom: 20px;
+  }
 
-@media screen and (max-width: 370px) {
+  .share-mobile {
+    display: inline-block;
+  }
+
+}
