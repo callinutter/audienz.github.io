@@ -571,6 +571,7 @@ body {
 
 .social_image {
   width: 35px;
+  height: 35px;
   margin-left: 15px;
   margin-right: 15px;
   fill: rgb(242,99,126);
@@ -659,6 +660,10 @@ body {
 }
 
 @media screen and (max-width: 1200px) {
+
+  .left-side {
+    display: none;
+  }
 
   .left, .right {
     float: none;
