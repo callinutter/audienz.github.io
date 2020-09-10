@@ -1,6 +1,6 @@
 body {
   /* reuglar: 400; bold: 600;*/
-  font-family: 'Poppins', sans-serif;
+  font-family: 'M PLUS Rounded 1c', sans-serif;
   margin:0;
 }
 
@@ -82,6 +82,14 @@ body {
   padding-bottom: 40px;
 }
 
+.left.landing {
+  width: 60%;
+}
+
+.right.landing {
+  width: 30%;
+}
+
 .playerControlButton.stop {
   padding-top: 110px;
   display: none;
@@ -101,11 +109,16 @@ body {
   justify-content: center;
 }
 
+.audio_player.landing {
+  box-shadow: 0 22px 92px -92px rgba(172,31,58,0.64);
+  width: 300px;
+  margin-bottom: 70px;
+  height: 420px;
+}
+
 .storeLinks {
-          margin-left: auto;
-          margin-right: auto;
-          text-align: center;
-          margin-top: 15px;
+          margin-top: 40px;
+          margin-bottom: 30px;
       }
 
 .text {
@@ -148,6 +161,18 @@ body {
         color: white;
       }
 
+      .store_image.center {
+        padding-left: 10px;
+        padding-right: 10px;
+      }
+
+      .mail-to {
+        color: rgba(242,99,126,1);
+        text-decoration: none;
+        font-size: 22px;
+        text-align: center;
+      }
+
 .logo-redirect {
   width: 200px;
   margin-left: 5%;
@@ -177,9 +202,14 @@ body {
   height: 100px;
 }
 
+.heading.black {
+  color: black;
+}
+
 .topnav {
   background-color: rgba(242,99,126,1);
   color: white;
+  font-weight: 600;
   padding-top: 30px;
   width: 100%;
   padding-left: 50px;
@@ -232,9 +262,13 @@ body {
 .pink-back{
   background-color: rgba(242,99,126,1);
   padding-bottom: 100px;
+  position: relative;
+    z-index: 20;
 }
 
 #home {
+  z-index: 10;
+  position: relative;
   background-color: rgba(242,99,126,1);
   color: white;
   margin-left: -300px;
@@ -251,6 +285,7 @@ body {
   margin-left: 450px;
   margin-right: 450px;
   padding-top: 20px;
+  text-align: center;
 }
 
 .right {
@@ -285,6 +320,15 @@ body {
   border-bottom: 1px solid white;
 }
 
+.heading.black.teamphoto {
+  padding-top: 10px;
+}
+
+.left.teamphoto {
+  width: 30%;
+  margin-right: 80px;
+}
+
 .share {
   cursor: pointer;
   height: 21px;
@@ -298,6 +342,113 @@ body {
   border-bottom: 1px solid white;
   margin-left: 150px;
 
+}
+
+.deco-ellipse1 {
+  height: 996px;
+    position: absolute;
+    width: 996px;
+    opacity: 0.47;
+    background-color: #EBEBEB;
+    border-radius: 500px;
+    overflow: hidden;
+    margin-top: -650px;
+    z-index: -10;
+    margin-left: -600px;
+}
+
+.deco-ellipse2 {
+  height: 600px;
+    position: absolute;
+    width: 600px;
+    opacity: 0.35;
+    background-color: #EBEBEB;
+    border-radius: 500px;
+    overflow: hidden;
+    margin-top: 400px;
+    z-index: -10;
+    right: 0;
+    margin-right: -400px;
+}
+
+.deco-ellipse3 {
+  height: 600px;
+    position: absolute;
+    width: 600px;
+    opacity: 0.2;
+    background-color: #EBEBEB;
+    border-radius: 500px;
+    overflow: hidden;
+    margin-top: 400px;
+    margin-left: -450px;
+    z-index: 10;
+}
+
+.deco-ellipse4 {
+  height: 600px;
+    position: absolute;
+    width: 600px;
+    opacity: 0.4;
+    background-color: #EBEBEB;
+    border-radius: 500px;
+    overflow: hidden;
+    margin-top: 1000px;
+    z-index: -10;
+    right: 0;
+    margin-right: -320px;
+}
+
+.deco-ellipse5 {
+  height: 400px;
+    position: absolute;
+    width: 400px;
+    opacity: 0.15;
+    background-color: #EBEBEB;
+    border-radius: 500px;
+    overflow: hidden;
+    margin-top: 1150px;
+    margin-left: -320px;
+    z-index: 10;
+}
+
+.deco-ellipse6 {
+  height: 400px;
+    position: absolute;
+    width: 400px;
+    opacity: 0.1;
+    background-color: #EBEBEB;
+    border-radius: 500px;
+    overflow: hidden;
+    margin-top: 1000px;
+    margin-left: -160px;
+    z-index: 10;
+}
+
+.deco-ellipse7 {
+  height: 600px;
+    position: absolute;
+    width: 600px;
+    opacity: 0.25;
+    background-color: #EBEBEB;
+    border-radius: 500px;
+    overflow: hidden;
+    margin-top: 1050px;
+    z-index: 10;
+    right: 0;
+    margin-right: -320px;
+}
+
+.deco-ellipse8 {
+  height: 600px;
+    position: absolute;
+    width: 600px;
+    opacity: 0.25;
+    background-color: #EBEBEB;
+    border-radius: 500px;
+    overflow: hidden;
+    z-index: 10;
+    margin-top: -600px;
+    margin-left: -350px;
 }
 
 .link {
@@ -348,19 +499,48 @@ body {
 
 .learn-more {
   border-bottom: 1px solid #fff;
-  width: 95px;
+  float: left;
+  font-size: 20px;
+  margin-top: 25px;
+  text-decoration-line: none;
+  color: white;
+  font-weight: 600;
+  margin-top: 20px;
 }
+
+.team_image {
+        width: 400px;
+        float: left;
+        margin-right: 30px;
+      }
 
 #features {
   min-height:550px;
   padding-top: 70px;
   padding-left: 100px;
   padding-right: 100px;
+  z-index: 20;
 }
 
 #about {
   padding-top: 120px;
   min-height:480px;
+  background-color: rgba(242,99,126,1);
+  text-align: center;
+}
+
+.heading.black.center {
+  text-align: center;
+}
+
+.storeLinks.center {
+  text-align: center;
+  align-items: center;
+}
+
+#about2 {
+  padding-top: 150px;
+  min-height:600px;
   background-color: rgba(242,99,126,1);
   text-align: center;
 }
@@ -386,6 +566,19 @@ body {
   border-bottom: 1px solid rgba(242,99,126,1);
   width: 100px;
   font-weight: 600;
+  text-decoration: none;
+}
+
+.social_image {
+  width: 35px;
+  margin-left: 15px;
+  margin-right: 15px;
+  fill: rgb(242,99,126);
+}
+
+.contact-us {
+  margin-bottom: 20px;
+  margin-top: 100px;
 }
 
 .e-mail-input {
@@ -431,38 +624,34 @@ body {
 .description {
   color: white;
   font-size: 20px;
+  text-align: left;
 }
 
 .description.black {
-  color: #3D4556;
-}
-
-#contact {
-  min-height:100px;
-  position: fixed;
-  right: 0;
-  bottom: 0;
+  color: black;
 }
 
 .heading {
   color: white;
-  font-size: 35px;
-  font-weight: 600;
+  font-size: 45px;
+  font-weight: 900;
   padding-bottom: 25px;
   padding-top: 60px;
-}
-
-.heading.black {
-  color: #3D4556;
+  text-align: left;
 }
 
 .imprint-link.footer {
   padding-top: 50px;
   padding-right: 30px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin-bottom: 20px;
 }
 
 .bold-text {
-  font-weight: 600;
+  font-weight: 900;
+  font-size: 20px;
 }
 
 .share_button {
@@ -497,6 +686,10 @@ body {
 
   .storeLinksRedirect {
     padding-bottom: 15px;
+  }
+
+  .store_image {
+
   }
 
   #contact {
