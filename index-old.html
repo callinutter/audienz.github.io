@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" type="text/css" content="width=device-width,initial-scale=1.0">
+    <title>audienz.app - Your voicestory. Your audienz.</title>
+
+    <link href="css/index.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;800&display=swap" rel="stylesheet">
+    <link rel="icon" href="images/audienz_Bildmarke_not_transparent.png">
+    <script src="jquery-3.5.1.min.js"></script>
+  </head>
+  <body onscroll="onScroll()">
+    <header>
+      <!-- Facebook Pixel Code -->
+      <script>
+      !function(f,b,e,v,n,t,s)
+      {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+      n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+      if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+      n.queue=[];t=b.createElement(e);t.async=!0;
+      t.src=v;s=b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t,s)}(window,document,'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
+       fbq('init', '1103443893349063'); 
+      fbq('track', 'PageView');
+      </script>
+      <noscript>
+       <img height="1" width="1" 
+      src="https://www.facebook.com/tr?id=1103443893349063&ev=PageView
+      &noscript=1"/>
+      </noscript>
+      <!-- End Facebook Pixel Code -->
+    </header>
+ 
+     <div id="sidenav" class="sidenav">
+      <img class="nav_logo" src="images/audienz_Bildmarke_not_transparent.png"/>
+      <a class="btn active" href="#get">Get audienz.app</a>
+      <a class="btn" href="#trailer">Trailer</a>
+      <a class="btn" href="#demo">Check out features</a>
+      <a class="btn" href="#contact">Contact</a>
+      <a class="btn" href="#aboutus">About us</a>
+    </div>
+
+    <!-- Top Navigation Menu -->
+    <div class="topnav">
+      <img class="nav_logo_mobile" src="images/audienz_Bildmarke_not_transparent.png"/>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <img class="nav_bars" src="images/bars.png"/>
+      </a>
+      <div id="myLinks">
+        <a class="btn active" href="#get">Get audienz.app</a>
+        <a class="btn" href="#trailer">Trailer</a>
+        <a class="btn" href="#demo">Check out demo</a>
+        <a class="btn" href="#contact">Contact</a>
+        <a class="btn" href="#aboutus">About us</a>
+      </div>
+    </div>
+
+    <div class="main">
+      <div id="get">
+      <img class="main_logo" src="images/audienz_ws.png"/>
+      <div class="section">
+      <div class="section">
+        <div class="description_text">
+          <div class="boldText">audienz.app</div> enables everyone to become a true storyteller by instantly sharing their short stories with the most emotional medium of all time: <div class="boldTextSmall">your voice.</div>
+        </div>
+        <div class="storeLinks">
+          <a class="link" href="https://apps.apple.com/us/app/id1516447240" target="_blank" >
+            <img class="store_image" src="images/app-store.png" />
+          </a>
+          <a class="link" href="https://play.google.com/store/apps/details?id=audienzapp.com" target="_blank" >
+            <img class="store_image" src="images/google-play-store.png" />
+          </a>
+        </div>
+        <div class="small_text">Available for Android and Apple devices</div>
+      </div>
+    </div>
+  </div>
+
+        <div id="trailer" class="section">
+          <div class="trailer">
+            <div class="centered-redirect">
+              <div class="audio_player">
+                <audio id="player" src="ressources/pitchdeck_teaser_audienz.app_mixdown.mp3"></audio>
+                  <div class="playerControlArea">
+                    <div id="audio_title" class="audio_title"></div>
+                    <div id="audio_author" class="audio_author"></div>
+                    <div id="audio_duration" class="audio_duration"></div>
+                    <button id="playButton" class="playerControlButton" onclick="play()">
+                      <img src="images/play.png" class="playerControls"/>
+                    </button> 
+                    <button class="playerControlButton" onclick="pause()"><img src='images/pause.png' class="playerControls"/></button> 
+                  </div>
+              </div>
+            </div>
+            </div>
+            <div>The sound of <div class="boldTextSmall">audienz.app.</div></div>
+          </div>
+
+      <div id="demo" class="section">
+        <div class="slideshow-container">
+          <div class="mySlides fade">
+            <img class="mockup" src="images/1_Home_mockup-1.png" />
+          </div>
+          <div class="mySlides fade">
+            <img class="mockup" src="images/2_Search_mockup.png" />
+          </div>
+          <div class="mySlides fade">
+            <img class="mockup" src="images/3_Profile_mockup-1.png" />
+          </div>
+        </div>
+        <div class="description_demo">
+          <div class="description_demo_bullet">
+            <div class="bold">#</div> Share all your stories and thoughts now anonymously via simple voicestories. 
+          </div>
+          <div class="description_demo_bullet">
+            <div class="bold">#</div> Filter the channels and discover the funniest, weirdest and most exciting stories and discuss it with the others
+          </div>
+          <div class="description_demo_bullet">
+            <div class="bold">#</div> Learn & laugh about new things from the voices around you in English & German
+          </div>
+          <div class="description_demo_bullet">
+            <div class="bold">#</div> Enjoy interacting with your audienz without any distracting picture on the whole platform
+          </div>
+        </div>
+      </div>
+
+      <div id="contact" class="section">
+        <div class="contact-us">
+          <a class="link contact-link" href="https://www.instagram.com/audienz.app/" target="_blank">
+            <img class="social_image" src="images/insta_icon.png" />
+          </a>
+          <a class="link contact-link"  href="https://www.linkedin.com/company/audienz-app/" target="_blank">
+            <img class="social_image" src="images/linkedIn_logo.png" />
+          </a>
+          <a class="link contact-link"  href="https://www.facebook.com/audienz.app.community/" target="_blank">
+            <img class="social_image" src="images/facebook_icon.png" />
+          </a>
+          <a class="link contact-link"  href="https://www.linkedin.com/company/audienz-app/?trk=public_profile_topcard_current_company&originalSubdomain=de" target="_blank">
+            <img class="social_image" src="images/whatsapp_icon.png" />
+          </a>
+        </div>
+        <div class="contact-us contact-mail">
+          <a class="mailto" href="mailto:hello@audienz.app">hello@audienz.app</a>
+        </div>
+      </div>
+
+      <div id="aboutus" class="section">
+        <div class="aboutus">
+          <div class="image_container">
+            <img class="team_image" src="images/audienz_102_highres.png" />
+          </div>
+          <div class="team_description">
+            <div class="boldTextSmall">We collect the stories behind pictures.</div>
+            <div>Hi, we are Pauline & Florian and we love storytelling (we really do, some of us even studied Journalism). In the over 10 years of our friendship we experienced hundreds of great stories together. The sad fact is, that most of these great memories are forgotten, overwritten by the amazing chaos of life, lost in the millions of pictures we take every day. But how was it really?
+            Wouldn’t it be great to listen to your best stories again in the future - told by no other person than your younger self?
+            With audienz.app we wanted to create that space, where all your life stories find a digital home - always there to be relived by you, your friends and your audienz. On audienz.app we let you collect the stories BEHIND your pictures. 
+            <div class="boldTextSmall">Your voicestory. Your audienz.</div></div>
+          </div>
+        </div>
+        </div>
+      </div>
+    <div class="credits">
+     (c) audienz.app 030 UG (haftungsbeschränkt)
+     <div class="footer-right-container">
+      <a class="footer-right" href="impressum.html">Impressum / Datenschutz</a>
+      <a class="footer-right" href="agbs.html">AGBs</a>
+    </div>
+    </div>
+
+    <script>
+   $(document).ready(function () {
+    $(document).on("scroll", onScroll);
+    
+    //smoothscroll
+    $('a[href^="#"]').on('click', function (e) {
+        e.preventDefault();
+        $(document).off("scroll");
+      
+        var target = this.hash,
+            menu = target;
+        $target = $(target);
+        $('html, body').stop().animate({
+            'scrollTop': $target.offset().top+2
+        }, 500, 'swing', function () {
+            window.location.hash = target;
+            $(document).on("scroll", onScroll);
+        });
+    });
+});
+
+function onScroll(event){
+    var scrollPos = $(document).scrollTop();
+    $('a').each(function () {
+      $(this).removeClass('active');
+    });
+    $('#sidenav a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() + 40 > scrollPos) {
+            console.log($(currLink.attr("href")));
+            currLink.addClass("active");
+        }
+    });
+    $('#myLinks a').each(function () {
+        var currLink = $(this);
+        var refElement = $(currLink.attr("href"));
+        if (refElement.position().top <= scrollPos && refElement.position().top + refElement.height() > scrollPos) {
+            $('#topnav a').removeClass("active");
+            currLink.addClass("active");
+        }
+        else{
+            currLink.removeClass("active");
+        }
+    });
+}
+
+    // slider
+    var slideIndex = 0;
+    showSlides();
+
+    function showSlides() {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      setTimeout(showSlides, 2000); // Change image every 2 seconds
+    }
+
+    // trailer controls
+    function play() {
+      document.getElementById('player').play();
+      document.getElementById('playButton').className += ' activePlay';
+    }
+
+    function pause() {
+      document.getElementById('player').pause();
+      document.getElementById('playButton').className = 'playerControlButton';
+    }
+
+    function myFunction() {
+      var x = document.getElementById("myLinks");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+    </script>
+
+     <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-163157432-1"></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'UA-163157432-1');
+      </script>
+      <script>
+        function exploreBeta() {
+          fbq('track', 'Explore beta');
+          window.open("https://audienz-app-beta.netlify.com/", "_blank"); 
+        }
+      </script>
+  </body>
+</html>
