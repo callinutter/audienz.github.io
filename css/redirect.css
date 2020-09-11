@@ -2,7 +2,6 @@ body {
   /* reuglar: 400; bold: 600;*/
   font-family: 'M PLUS Rounded 1c', sans-serif;
   margin:0;
-  overflow-x: hidden;
 }
 
 .pink-background {
@@ -98,19 +97,6 @@ body {
 }
 
 .audio_player {
-  background-color: #3D4556;
-  border-radius: 10px;
-  width: 400px;
-  height: 500px;
-  margin-right: 50px;
-  box-shadow: 0 22px 92px 8px rgba(172,31,58,0.64);
-  margin-bottom: 45px;
-  align-items: center;
-  text-align: center;
-  justify-content: center;
-}
-
-.audio_player.redirect {
   background-color: #3D4556;
   border-radius: 10px;
   width: 400px;
@@ -679,107 +665,12 @@ body {
   display: none;
 }
 
-.language-select {
-  display: none;
-}
-
 @media screen and (max-width: 1200px) {
 
-  .audio_player.landing {
-    width: 100%;
-    height: 220px;
-  }
-
-  .inner.landing {
-    text-align: left;
-  }
-
-  .playerControlArea {
-    text-align: left;
-    display: flex;
-    flex-direction: row;
-    padding-top: 30px;
-  }
-
-  .imprint-link {
-    text-align: center;
-  }
-
-  .audio_description {
-    margin-top: 20px;
-    margin-left: 20px;
-  }
-
-  .audio_duration {
-    margin-bottom: 0;
-  }
-
-  .audio_author {
-    margin-top: 0;
-  }
-
-  .playerControls {
-    width: 60px;
-    height: 60px;
-  }
-
-  .audio_description {
-    flex-direction: row;
-  }
-
-  .heading.black.nomargMobile {
-    margin-top: 0;
-    padding-top: 0;
-  }
-
-  #features {
-    padding-bottom: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-  }
-
-  #features > .right {
-    width: 100%;
-    margin-left: 0;
-  }
-
-  .home-footer {
-    margin-top: 100px;
-    margin-bottom: 20px;
-  }
-
-  .left.features {
-    width: 40%;
-  }
-
-  .mockup {
-    margin-left: 0;
-    margin-top: 20px;
-    width: 220px;
-  }
-
-  #about {
-    padding-top: 0;
-  } 
-
-  .mobile-about {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .deco-ellipse7 {
-    margin-right: -500px;
-  }
-
-  #about2 {
-    padding-top: 50px;
-    padding-bottom: 50px;
-  }
-
-  .left.teamphoto {
-    width: 50%;
-    margin-right: auto;
+  #home {
+    margin-left: -80%;
+    margin-right: -151%;
+    min-height: 1200px;
   }
 
   .left-side {
@@ -793,8 +684,6 @@ body {
 
   .left {
     top: 0;
-    margin-left: auto;
-    margin-right: auto;
     width: 100%;
   }
 
@@ -816,20 +705,15 @@ body {
     padding-bottom: 15px;
   }
 
+  .store_image {
+
+  }
+
   #contact {
     width: 100%;
     left: 0;
     height: 60px;
-  }
-
-  .learn-more {
-    display: none;
-  }
-
-  .imprint-link a {
-    padding-left: 20px;
-    padding-right: 0px;
-    float: none;
+    position: relative;
   }
 
   .share_button {
@@ -837,17 +721,20 @@ body {
   }
 
   .right-side {
-    margin-top: 9px;
-    font-size: 12px;
+    margin-top: 16px;
+  }
+
+  .left.landing {
+    width: 80%;
   }
 
   .store_image {
-    width: 150px;
-    z-index: 50;
+    width: 250px;
   }
 
   .topnav {
-    height: 60px;
+    width: calc(100% + 300px);
+    height: 80px;
     border: none;
   }
 
@@ -868,7 +755,7 @@ body {
   }
 
   .heading {
-    font-size: 45px;
+    font-size: 65px;
   }
 
   .right.landing {
@@ -882,17 +769,13 @@ body {
 
   .nav_logo_mobile {
     display: block;
-    width: 150px;
+    width: 200px;
     position: absolute;
   }
 
   .inner {
-    margin-left: 250px;
+    margin-left: 350px;
     margin-right: 250px;
-  }
-
-  .deco-ellipse8 {
-    margin-left: -500px;
   }
 
   .imprint-link.footer {
@@ -916,15 +799,6 @@ body {
     border-bottom-right-radius: 40px;
   }
 
-  .audio_player.redirect {
-    width: 100%;
-    height: 350px;
-    border-radius: 0;
-    box-shadow: 0 22px 92px -92px rgba(172,31,58,0.64);
-    border-bottom-left-radius: 40px;
-    border-bottom-right-radius: 40px;
-  }
-
   .playerControlButton.play, .playerControlButton.stop {
     padding-top: 50px;
     padding-bottom: 20px;
@@ -932,71 +806,6 @@ body {
 
   .share-mobile {
     display: inline-block;
-  }
-
-  .right.margin {
-    margin-bottom: 50px;
-  }
-
-}
-
-
-@media screen and (max-width: 400px) {
-
-  .store_image {
-    width: 120px;
-    padding-right: 5px;
-  }
-
-  .topnav {
-    padding-left: 10px;
-  }
-
-  .left.features {
-    margin-right: 0;
-    margin-left: 0;
-  }
-
-  .form-button {
-    margin-top: 15px;
-    margin-bottom: 20px;
-  }
-
-  #features2 {
-    padding-top: 0;
-  }
-
-  .social_image {
-    margin-left: 0;
-    margin-right: 0;
-  }
-
-  .heading.top {
-    padding-top: 10px;
-  }
-
-  .description {
-    font-size: 20px;
-  }
-
-  .heading.top {
-    font-size: 40px;
-  }
-
-  .team_image {
-    width: 280px;
-    float: left;
-    margin-right: 30px;
-    margin-left: 20px;
-  }
-
-  .nav_logo_mobile {
-    margin-right: 15px;
-  }
-
-  .left.teamphoto {
-    margin-right: 0;
-    margin-left: 0;
   }
 
 }
