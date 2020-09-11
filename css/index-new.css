@@ -245,6 +245,7 @@ body {
 
 .left-side {
   float: left;
+  width: 100%;
 }
 
 /* Change the color of links on hover */
