@@ -677,6 +677,39 @@ body {
     height: 220px;
   }
 
+  .inner.landing {
+    text-align: left;
+  }
+
+  .playerControlArea {
+    text-align: left;
+    display: flex;
+    flex-direction: row;
+    padding-top: 30px;
+  }
+
+  .imprint-link {
+    text-align: center;
+  }
+
+  .audio_description {
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+
+  .audio_duration {
+    margin-bottom: 0;
+  }
+
+  .audio_author {
+    margin-top: 0;
+  }
+
+  .playerControls {
+    width: 60px;
+    height: 60px;
+  }
+
   .audio_description {
     flex-direction: row;
   }
