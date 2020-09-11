@@ -666,6 +666,10 @@ body {
   display: none;
 }
 
+.language-select {
+  display: none;
+}
+
 @media screen and (max-width: 1200px) {
 
   .audio_player.landing {
@@ -875,14 +879,22 @@ body {
     display: inline-block;
   }
 
+  .right.margin {
+    margin-bottom: 50px;
+  }
+
 }
 
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 400px) {
 
   .store_image {
     width: 120px;
     padding-right: 5px;
+  }
+
+  .topnav {
+    padding-left: 10px;
   }
 
   .left.features {
@@ -912,11 +924,19 @@ body {
     font-size: 20px;
   }
 
+  .heading.top {
+    font-size: 40px;
+  }
+
   .team_image {
     width: 280px;
     float: left;
     margin-right: 30px;
     margin-left: 20px;
+  }
+
+  .nav_logo_mobile {
+    margin-right: 15px;
   }
 
   .left.teamphoto {
