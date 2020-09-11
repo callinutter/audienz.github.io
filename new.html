@@ -32,7 +32,7 @@
 				<div>
 				<div class="left landing">
 					<div> 
-						<div class="heading">audienz.app</div>
+						<div class="heading top">audienz.app</div>
 						<div class="description">Share your best memories now anonymously in short voicestories to connect with others and become a true storyteller.</div>
 					</div>
 					<div class="storeLinks">
@@ -51,9 +51,11 @@
 		              <div class="playerControlArea">
 		                <button class="playerControlButton play" id="play" onclick="{document.getElementById('player').play(); document.getElementById('stop').style.display='inline-block'; document.getElementById('play').style.display='none';}"><img src="images/play_pink.png" class="playerControls"/></button> 
 		                <button class="playerControlButton stop" id="stop" onclick="{document.getElementById('player').pause(); document.getElementById('play').style.display='inline-block'; document.getElementById('stop').style.display='none';}"><img src="images/pause_pink.png" class="playerControls"/></button> 
-		                <div id="audio_duration" class="audio_duration">1:09</div>
-		                <div id="audio_title" class="audio_title">Trailer</div>
-		                <div id="audio_author" class="audio_author">by team_audienz</div>
+		                <div class="audio_description">
+			                <div id="audio_duration" class="audio_duration">1:09</div>
+			                <div id="audio_title" class="audio_title">Trailer</div>
+			                <div id="audio_author" class="audio_author">by team_audienz</div>
+			            </div>
 		              </div>
 		            </div>
 	        	</div>
@@ -71,12 +73,12 @@
 	<div class="deco-ellipse2"></div>
 
 	<div id="features">
-		<div class="left">
+		<div class="left features">
 			<img class="mockup" src="images/record.png" />
 		</div>
 		<div class="right">
 			<div>
-				<div class="heading black">Discover realness</div>
+				<div class="heading black nomargMobile">Discover realness</div>
 				<div class="description black">On audienz.app you can listen to all kinds of topics you never heard before. Scroll the feed and discover unique, fun, weird, and intimate moments captured by our users.</div>
 				<a href="#home" class="start-now">Start now</a>
 			</div>
@@ -87,7 +89,7 @@
 	<div class="deco-ellipse5"></div>
 	<div class="deco-ellipse6"></div>
 	<div id="about">
-		<div>
+		<div class="mobile-about">
 			<div class="heading black center">Stay up to date</div>
 			<span class="description">Subscribe to our newsletter to read where this story is going (or just follow us on social media like everyone else).</span>
 			<form class="e-mail-input">
@@ -101,7 +103,7 @@
 	<div id="features">
 		<div class="left">
 			<div>
-				<div class="heading black">Tell your story</div>
+				<div class="heading black top">Tell your story</div>
 				<div class="description black">Share what’s really on your mind by making the most of our #askmeaudienz feature: Just press record & anonymously answer a random question from the categories <span class="bold-text">Mind, Date, or Party</span>. It’s as easy as it gets!</div>
 				<a href="#home" class="start-now">Start now</a>
 			</div>
@@ -161,6 +163,5 @@
 		</div>
 	</div>
 	</div>
-
 </body>
 </html>
