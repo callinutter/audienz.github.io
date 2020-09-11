@@ -119,6 +119,7 @@ body {
 .storeLinks {
           margin-top: 40px;
           margin-bottom: 30px;
+          text-align: left;
       }
 
 .text {
@@ -626,6 +627,7 @@ body {
   color: white;
   font-size: 20px;
   text-align: left;
+  margin-bottom: 20px;
 }
 
 .description.black {
@@ -659,7 +661,17 @@ body {
   display: inline-block;
 }
 
+.nav_logo_mobile {
+  display: none;
+}
+
 @media screen and (max-width: 1200px) {
+
+  #home {
+    margin-left: -80%;
+    margin-right: -151%;
+    min-height: 1200px;
+  }
 
   .left-side {
     display: none;
@@ -700,11 +712,30 @@ body {
   #contact {
     width: 100%;
     left: 0;
+    height: 60px;
     position: relative;
   }
 
   .share_button {
     display: none;
+  }
+
+  .right-side {
+    margin-top: 16px;
+  }
+
+  .left.landing {
+    width: 80%;
+  }
+
+  .store_image {
+    width: 250px;
+  }
+
+  .topnav {
+    width: calc(100% + 300px);
+    height: 80px;
+    border: none;
   }
 
   .headingRedirect {
@@ -723,12 +754,40 @@ body {
     float: right;
   }
 
+  .heading {
+    font-size: 65px;
+  }
+
+  .right.landing {
+    width: 100%;
+    margin-left: -20px;
+  }
+
+  .description {
+    font-size: 28px;
+  }
+
+  .nav_logo_mobile {
+    display: block;
+    width: 200px;
+    position: absolute;
+  }
+
+  .inner {
+    margin-left: 350px;
+    margin-right: 250px;
+  }
+
   .imprint-link.footer {
     padding-top: 70px;
   color: white;
   font-family: 'M PLUS Rounded 1c', sans-serif;
   font-size: 16px;
   font-weight: 800;
+  }
+
+  .right-side .language-select {
+    font-size: 16px;
   }
 
   .audio_player {
