@@ -2,9 +2,15 @@
 <rss version="2.0">
 	<channel>
 		<title>audienz.app - RSS Feed</title>
-		<author>audienz.app</author>
+		<itunes:author>audienz.app</itunes:author>
 		<link>https://www.audienz.app</link>
 		<description>Your voicestory. Your audienz.</description>
+		<itunes:image href="URL OF AN IMAGE FOR THE PODCAST" />
+		<itunes:email>hello@audienz.app</itunes:email>
+		<itunes:category></itunes:category>
+		<itunes:keywords>
+        audienzapp,voicestory,journal,voice
+    	</itunes:keywords>
 		<item>
 			<title>Luzides Traeumen</title>
 			<author>SpaceRegulatoryOffice</author>
