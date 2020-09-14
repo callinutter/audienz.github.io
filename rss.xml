@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="ISO-8859-1"?>
 <rss version="0.91">
 	<channel>
-		<title>Test</title>
-		<link>https://s3.eu-west-2.amazonaws.com/audienz.app/audienz.app-audios/1Startedfromthetop-teamaudienz1583865083544.mp3</link>
-		<description>Test Description</description>
+		<title>audienz.app - RSS Feed</title>
+		<link>https://www.audienz.app</link>
+		<description>Your voicestory. Your audienz.</description>
 		<item>
-		<title>Test 2</title>
-		<link></link>
-		<description>Test Description 2</description>
+			<title>Test</title>
+			<link>https://s3.eu-west-2.amazonaws.com/audienz.app/audienz.app-audios/1Startedfromthetop-teamaudienz1583865083544.mp3</link>
+			<pubDate>Mon, 14.09.2020</pubDate>
+			<description>Test Description 2</description>
+		</item>
 	</channel>
 </rss>
