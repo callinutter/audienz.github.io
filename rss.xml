@@ -1,14 +1,73 @@
-<?xml version="1.0" encoding="ISO-8859-1"?>
-<rss version="0.91">
+<?xml version="1.0"?>
+<rss version="2.0">
 	<channel>
 		<title>audienz.app - RSS Feed</title>
 		<link>https://www.audienz.app</link>
 		<description>Your voicestory. Your audienz.</description>
 		<item>
-			<title>Test</title>
-			<link>https://s3.eu-west-2.amazonaws.com/audienz.app/audienz.app-audios/1Startedfromthetop-teamaudienz1583865083544.mp3</link>
-			<pubDate>Mon, 14.09.2020</pubDate>
-			<description>Test Description 2</description>
+			<title>Luzides Traeumen - SpaceRegulatoryOffice</title>
+			<link>https://s3.eu-west-2.amazonaws.com/audienz.app/audienz.app/luzidestrumen-1599508192124.m4a</link>
+			<description>2:54 Miuten</description>
+		</item>
+		<item>
+			<title>W15#006 Der Kieberer - WIENfuenfzehn</title>
+			<link>https://s3.eu-west-2.amazonaws.com/audienz.app/audienz.app/w15006derkieberer-1599394897169.m4a</link>
+			<description>1:52 Minuten</description>
+		</item>
+		<item>
+			<title>Ein Buch / Ein Sonntag - Jil</title>
+			<link>https://s3.eu-west-2.amazonaws.com/audienz.app/audienz.app/einbuch-einsonntag-1599374920560.m4a</link>
+			<description>3:38 Minuten</description>
+		</item>
+		<item>
+			<title>Was rettet Ju - 666juhu999</title>
+			<link>https://s3.eu-west-2.amazonaws.com/audienz.app/audienz.app/wasrettetju-1599255505110.m4a</link>
+			<description>0:45 Minuten</description>
+		</item>
+		<item>
+			<title>Lentil Soup Tale - Daeron</title>
+			<link>https://s3.eu-west-2.amazonaws.com/audienz.app/audienz.app/lentilsouptale-1598993802859.m4a</link>
+			<description>1:31 Minuten</description>
+		</item>
+		<item>
+			<title>Sommerwiese - ASMR_Sounds</title>
+			<link>https://s3.eu-west-2.amazonaws.com/audienz.app/audienz.app/sommerwiese-1598705260316.m4a</link>
+			<description>1:22 Minuten</description>
+		</item>
+		<item>
+			<title>COVID-19 Test - general_paulinski</title>
+			<link>https://s3.eu-west-2.amazonaws.com/audienz.app/audienz.app/covid-19test-1598604791179.m4a</link>
+			<description>2:45 Minuten</description>
+		</item>
+		<item>
+			<title>Duplo vs. Kinderriegel - schreibtisch</title>
+			<link>https://s3.eu-west-2.amazonaws.com/audienz.app/audienz.app-audios/DulploVSKinderRiegelRatespieleHome1585391471802.mp3</link>
+			<description>2:56 MInuten</description>
+		</item>
+		<item>
+			<title>Ganz, ganz klein...</title>
+			<link>https://s3.eu-west-2.amazonaws.com/audienz.app/audienz.app/ganzganzklein...-1598037543576.m4a</link>
+			<description>1:35 Minuten</description>
+		</item>
+		<item>
+			<title>Babies im Berghain - Rese</title>
+			<link>https://s3.eu-west-2.amazonaws.com/audienz.app/audienz.app/babiesimberghain-1597826219446.m4a</link>
+			<description>2:46 Minuten</description>
+		</item>
+		<item>
+			<title>lifehack24.de - nils</title>
+			<link>https://s3.eu-west-2.amazonaws.com/audienz.app/audienz.app-audios/Howtoffamouspeoplelifehack24de1586390442173.mp3</link>
+			<description>0:45 Minuten</description>
+		</item>
+		<item>
+			<title>Voellig verknoeppelt - voices_of_berlin</title>
+			<link>https://s3.eu-west-2.amazonaws.com/audienz.app/audienz.app-audios/VlligverknppeltJohn1584165094281.mp3</link>
+			<description>1:47 Minuten</description>
+		</item>
+		<item>
+			<title>How to 1. Hilfe - voices_of_berlin</title>
+			<link>https://s3.eu-west-2.amazonaws.com/audienz.app/audienz.app/1hilfe.m4a</link>
+			<description>4:58 Minuten</description>
 		</item>
 	</channel>
 </rss>
