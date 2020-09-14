@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<rss version="0.91">
+	<channel>
+		<title>Test</title>
+		<link>https://s3.eu-west-2.amazonaws.com/audienz.app/audienz.app-audios/1Startedfromthetop-teamaudienz1583865083544.mp3</link>
+		<description>Test Description</description>
+		<item>
+		<title>Test 2</title>
+		<link></link>
+		<description>Test Description 2</description>
+	</channel>
+</rss>
