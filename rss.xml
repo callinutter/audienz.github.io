@@ -7,7 +7,7 @@
 		<description>Your voicestory. Your audienz.</description>
 		<itunes:image href="https://www.audienz.app/images/cover-art_audienz.app.png" />
 		<itunes:email>hello@audienz.app</itunes:email>
-		<itunes:category></itunes:category>
+		<itunes:category text="Arts & Entertainment" />
 		<itunes:keywords>
         audienzapp,voicestory,journal,voice
     	</itunes:keywords>
