@@ -2,6 +2,7 @@
 <rss version="2.0">
 	<channel>
 		<title>audienz.app - RSS Feed</title>
+		<author>audienz.app</itunes>
 		<itunes:author>audienz.app</itunes:author>
 		<link>https://www.audienz.app</link>
 		<description>Your voicestory. Your audienz.</description>
