@@ -5,7 +5,7 @@
 		<itunes:author>audienz.app</itunes:author>
 		<link>https://www.audienz.app</link>
 		<description>Your voicestory. Your audienz.</description>
-		<itunes:image href="URL OF AN IMAGE FOR THE PODCAST" />
+		<itunes:image href="https://www.audienz.app/images/cover-art_audienz.app.png" />
 		<itunes:email>hello@audienz.app</itunes:email>
 		<itunes:category></itunes:category>
 		<itunes:keywords>
