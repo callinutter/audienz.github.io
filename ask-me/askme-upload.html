@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+	<meta charset="utf-8" />
+    <meta name="viewport" type="text/css" content="width=device-width,initial-scale=1.0">
+    <title>audienz.app - Your voicestory. Your audienz.</title>
+    <link rel="icon" href="../images/audienz_Bildmarke_not_transparent.png">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+    <meta name="robots" content="nofollow"> 
+</head>
+<body>
+    <h1>Add ask me questions:</h1>
+
+    <form id="upload-form">
+      <label for="fname">Question:</label>
+      <input type="text" id="question" name="fname"><br><br>
+      <div>
+        <h3>Choose 1 language:</h3>
+                <div>
+            <label for="vehicle2">German</label><br>
+            <input type="checkbox" id="language1">
+        </div>
+        <div>
+            <label for="vehicle1">English</label><br>
+            <input type="checkbox" id="language2">
+        </div>
+      </div>
+        <div>
+            <h3>Choose 1 category:</h3>
+            <div>
+                <label for="vehicle2">Mind</label><br>
+                <input type="checkbox" id="category1">
+            </div>
+            <div>
+                <label for="vehicle2">Date</label><br>
+                <input type="checkbox" id="category2">
+            </div>
+            <div>
+                <label for="vehicle2">Party</label><br>
+                <input type="checkbox" id="category3">
+            </div>
+            <div>
+                <label for="vehicle2">Opinion</label><br>
+                <input type="checkbox" id="category4">
+            </div>
+            <input type="button" value="Submit Question" onclick='submitForm()'/>
+        </div>
+    </form>
+    <div id="question-list">
+        
+    </div>
+
+    <script>
+        const getQuestions = fetch("https://audienzappbackend.herokuapp.com/questions/all").then(r=>r.json()).then(data => {
+            return data;
+        });
+
+        function deleteQuestion(id) {
+            console.log("Delete : " + id);
+            fetch('https://audienzappbackend.herokuapp.com/questions/delete/' + id, {
+                method: 'delete',
+              }).then(function(response) {
+                alert("question deleted");
+                window.location.reload();
+              });
+        }
+
+        window.onload = async () => {
+            let rows = await getQuestions;
+            console.log(rows);
+            var html = "<table border='1|1'><tr><th>Question</th><th>Category</th><th>German?</th></tr>";
+            for (var i = 0; i < rows.length; i++) {
+                html+="<tr id="+ rows[i]._id +">";
+                html+="<td>"+rows[i].text+"</td>";
+                html+="<td>"+rows[i].type+"</td>";
+                html+="<td>"+rows[i].german+"</td>";
+                html+='<td><button type="button" onclick=\'deleteQuestion("' + rows[i]._id + '")\'>Delete</button></td>';
+                html+="</tr>";
+            }
+            html+="</table>";
+            document.getElementById("question-list").innerHTML = html;
+        };
+
+        async function submitForm() {
+            let german = false;
+            if (document.getElementById("language1").checked) german = true;
+            let type;
+            if(document.getElementById("category1").checked) type = "mind";
+            else if(document.getElementById("category2").checked) type = "date";
+            else if(document.getElementById("category3").checked) type = "party";
+            else type = "opinion";
+            let question = document.getElementById("question").value;
+            let req = {
+                german: german,
+                text: question,
+                type: type,
+                id: "12"
+            };
+            await upload(req);
+        }
+
+        async function upload (req) {
+            fetch('https://audienzappbackend.herokuapp.com/questions/add', {
+                method: 'post',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify(req)
+              }).then(function(response) {
+                alert("question added");
+                window.location.reload();
+                });
+          }
+    </script>
+</body>
+</html>
