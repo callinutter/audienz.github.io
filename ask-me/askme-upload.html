@@ -47,7 +47,20 @@
             <input type="button" value="Submit Question" onclick='submitForm()'/>
         </div>
     </form>
-    <div id="question-list">
+    <h3>Mind:</h3>
+    <div id="question-list-mind">
+        
+    </div>
+    <h3>Date:</h3>
+    <div id="question-list-date">
+        
+    </div>
+    <h3>Party:</h3>
+    <div id="question-list-party">
+        
+    </div>
+    <h3>Opinion:</h3>
+    <div id="question-list-opinion">
         
     </div>
 
@@ -68,19 +81,74 @@
 
         window.onload = async () => {
             let rows = await getQuestions;
-            console.log(rows);
+            let rowsMind = [];
+            let rowsDate = [];
+            let rowsOpinion = [];
+            let rowsParty = [];
+            rows.forEach(function (item) {
+                if(item.type == "party"){
+                    if(item.german) rowsParty.push(item)
+                    else rowsParty.unshift(item) 
+                }
+                if(item.type == "mind"){
+                    if(item.german) rowsMind.push(item)
+                    else rowsMind.unshift(item)
+                }
+                if(item.type == "opinion"){
+                    if(item.german) rowsOpinion.push(item)
+                    else rowsOpinion.unshift(item)
+                }
+                if(item.type == "date"){
+                    if(item.german) rowsDate.push(item)
+                    else rowsDate.unshift(item)
+                }
+            });
+        
             var html = "<table border='1|1'><tr><th>Question</th><th>Category</th><th>German?</th></tr>";
-            for (var i = 0; i < rows.length; i++) {
-                html+="<tr id="+ rows[i]._id +">";
-                html+="<td>"+rows[i].text+"</td>";
-                html+="<td>"+rows[i].type+"</td>";
-                html+="<td>"+rows[i].german+"</td>";
-                html+='<td><button type="button" onclick=\'deleteQuestion("' + rows[i]._id + '")\'>Delete</button></td>';
+            for (var i = 0; i < rowsMind.length; i++) {
+                html+="<tr id="+ rowsMind[i]._id +">";
+                html+="<td>"+rowsMind[i].text+"</td>";
+                html+="<td>"+rowsMind[i].type+"</td>";
+                html+="<td>"+rowsMind[i].german+"</td>";
+                html+='<td><button type="button" onclick=\'deleteQuestion("' + rowsMind[i]._id + '")\'>Delete</button></td>';
                 html+="</tr>";
             }
             html+="</table>";
-            document.getElementById("question-list").innerHTML = html;
-        };
+            document.getElementById("question-list-mind").innerHTML = html;
+             var html = "<table border='1|1'><tr><th>Question</th><th>Category</th><th>German?</th></tr>";
+            for (var i = 0; i < rowsDate.length; i++) {
+                html+="<tr id="+ rowsDate[i]._id +">";
+                html+="<td>"+rowsDate[i].text+"</td>";
+                html+="<td>"+rowsDate[i].type+"</td>";
+                html+="<td>"+rowsDate[i].german+"</td>";
+                html+='<td><button type="button" onclick=\'deleteQuestion("' + rowsDate[i]._id + '")\'>Delete</button></td>';
+                html+="</tr>";
+            }
+            html+="</table>";
+            document.getElementById("question-list-date").innerHTML = html;
+            var html = "<table border='1|1'><tr><th>Question</th><th>Category</th><th>German?</th></tr>";
+            for (var i = 0; i < rowsOpinion.length; i++) {
+                html+="<tr id="+ rowsOpinion[i]._id +">";
+                html+="<td>"+rowsOpinion[i].text+"</td>";
+                html+="<td>"+rowsOpinion[i].type+"</td>";
+                html+="<td>"+rowsOpinion[i].german+"</td>";
+                html+='<td><button type="button" onclick=\'deleteQuestion("' + rowsOpinion[i]._id + '")\'>Delete</button></td>';
+                html+="</tr>";
+            }
+            html+="</table>";
+            document.getElementById("question-list-opinion").innerHTML = html;
+            var html = "<table border='1|1'><tr><th>Question</th><th>Category</th><th>German?</th></tr>";
+            for (var i = 0; i < rowsParty.length; i++) {
+                html+="<tr id="+ rowsParty[i]._id +">";
+                html+="<td>"+rowsParty[i].text+"</td>";
+                html+="<td>"+rowsParty[i].type+"</td>";
+                html+="<td>"+rowsParty[i].german+"</td>";
+                html+='<td><button type="button" onclick=\'deleteQuestion("' + rowsParty[i]._id + '")\'>Delete</button></td>';
+                html+="</tr>";
+            }
+            html+="</table>";
+            document.getElementById("question-list-party").innerHTML = html;
+        }
 
         async function submitForm() {
             let german = false;
