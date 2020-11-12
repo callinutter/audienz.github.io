@@ -22,9 +22,9 @@
       <div class="centered-redirect">
         <div class="left">
           <div class="audio_player redirect">
-            <audio id="player" src=""></audio>
+            <audio id="player"></audio>
               <div class="playerControlArea">
-                <button class="playerControlButton play" id="play" onclick="{document.getElementById('player').play(); document.getElementById('stop').style.display='inline-block'; document.getElementById('play').style.display='none';}"><img src="images/play_pink.png" class="playerControls"/></button> 
+                <button class="playerControlButton play" id="play" onclick="clickPlay()"><img src="images/play_pink.png" class="playerControls"/></button> 
                 <button class="playerControlButton stop" id="stop" onclick="{document.getElementById('player').pause(); document.getElementById('play').style.display='inline-block'; document.getElementById('stop').style.display='none';}"><img src="images/pause_pink.png" class="playerControls"/></button> 
                 <div id="audio_duration" class="audio_duration"></div>
                 <div id="audio_title" class="audio_title"></div>
@@ -76,10 +76,28 @@
             let title = json.audio_title;
             let author = json.audio_author;
             let duration = json.audio_duration;
+            document.getElementById("player").type = "audio/m4a";
             document.getElementById("player").src = url;
             document.getElementById("audio_title").innerHTML = title;
             document.getElementById("audio_author").innerHTML = "by " + author;
             document.getElementById("audio_duration").innerHTML = duration;
+          }
+        }
+
+        clickPlay = function() {
+          var url = document.querySelector('audio').src;
+          console.log(url)
+          var audio = new Audio();
+          audio.src = url;
+          var playPromise = audio.play();
+          if (playPromise !== undefined) {
+                playPromise.then(function() {
+                   audio.addEventListener('timeupdate',function() {
+                      console.log(audio.currentTime, audio.duration);
+                   }, true);
+                }).catch(function(error) {
+                      console.error('Failed to start your sound, retrying.');
+                });
           }
         }
 
