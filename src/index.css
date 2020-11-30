@@ -1,12 +1,12 @@
  html, body {
-  height: 100%;
-  background: linear-gradient(38deg, #ff6580 50%, #ff6580 40%, #EBA261 80%); 
-  background-repeat: no-repeat;
+  /* height: 100%; */
+  /* background: linear-gradient(38deg, #ff6580 50%, #ff6580 40%, #EBA261 80%);  */
+  /* background-repeat: no-repeat;
   height: auto;
   background-attachment: fixed;
-  background-size: cover;
+  background-size: cover; */
   /* font-size: 30px;  */
-  color: white;
+  /* color: white; */
   font-family: 'Poppins', sans-serif;
 }
 

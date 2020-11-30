@@ -35,3 +35,27 @@
     margin-top: 30px;
     margin-bottom: 70px;
 }
+
+@media screen and (max-width: 960px) {
+    .subscribe-header {
+        font-size: 36px;
+    }
+
+    .subscribe-text {
+        font-size: 20px;
+    }
+
+    .container-2 {
+        padding-left: 4px;
+        padding-right: 4px;
+        padding-bottom: 20px;
+    }
+
+    .email-input {
+        width: 60%;
+    }
+
+    ::placeholder {
+        text-align: center;
+    }
+}

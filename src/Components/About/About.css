@@ -26,3 +26,27 @@
     font-size: 22px;
     text-align: left;
 }
+
+@media screen and (max-width: 960px) {
+    .about-container {
+        padding: 10px 26px;
+    }
+
+    .about-row {
+        display: flex;
+        justify-content: center;
+        justify-items: center;
+        text-align: center;
+    }
+
+    .about-column {
+        flex: none;
+        max-width: 90%;
+    }
+    .about-title {
+        text-align: center;
+    }
+    .about-description {
+        text-align: center;
+    }
+}

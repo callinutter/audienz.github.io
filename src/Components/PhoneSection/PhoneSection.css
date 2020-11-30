@@ -24,3 +24,21 @@
 .phone-img-1 {
     height: 600px;
 }
+
+@media screen and (max-width: 960px) {
+    .phone-row {
+        display: grid;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .phone-column {
+        float: none;
+        width: unset;
+    }
+
+    .phone-btns {
+        position: absolute;
+        left: 115px;
+    }
+}

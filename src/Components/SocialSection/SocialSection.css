@@ -35,3 +35,17 @@
     justify-content: center;
     margin: 50px 0;
 }
+
+@media screen and (max-width: 960px) {
+    .social-heading {
+        font-size: 36px;
+    }
+
+    .contact-app-store {
+        display: block;
+    }
+
+    .email-link {
+        font-size: 20px;
+    }
+}
