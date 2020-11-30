@@ -1,9 +1,28 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react'
 import { Button } from '../Button'
 import './HeroSection.css'
 
 function HeroSection() {
+    // let audio = new Audio("/sounds/teaser.mp3")
 
+    // const start = () => {
+    //     audio.play();
+    // }
+
+    // const pause = () => {
+    //     audio.pause();
+    // }
+    // const useAudio = () => {
+        const [audio] = useState(new Audio("/sounds/teaser.mp3"));
+        const [playing, setPlaying] = useState(false);
+      
+        const toggle = () => setPlaying(!playing);
+      
+        useEffect(() => {
+            playing ? audio.play() : audio.pause();
+          }
+        );
+      
     return (
         <div className="hero-container">
             <div className="row">
@@ -36,10 +55,14 @@ function HeroSection() {
                     <div className="click-here">
                         <img className="right-arrow" src="../../img/right-arrow.png" />
                         <br></br>
-                        <a href="">click here to listen <br></br>
-                        to an example</a>
+                        <p className="audio-description">click on the image to <br /> listen 
+                        to an example</p>
                     </div>
-                    <img className="phone-img" src="../../img/hero-section-phone.png" alt="phone" />
+                    <img 
+                    onClick={toggle} 
+                    className="phone-img" 
+                    src="../../img/hero-section-phone.png" 
+                    alt="phone" />
                 </div>
             </div>
         </div>
