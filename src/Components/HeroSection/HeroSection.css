@@ -1,0 +1,119 @@
+.hero-heading {
+    text-transform: uppercase;
+    font-size: 60px;
+    color: #fff;
+}
+
+.hero-description {
+    font-weight: 300;
+    font-size: 25px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+a {
+    color: #ffffff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.hero-container {
+    padding: 3% 10% 15%;
+    
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.column {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.phone-img {
+    position: absolute;
+    right: 11%;
+}
+
+.app-store {
+    display: inline-flex;
+    margin-top: 50px;
+}
+
+.apple-store, .google-store {
+    height: 60px;
+    margin-right: 20px;
+}
+
+.click-here {
+    text-align: right;
+    position: absolute;
+    bottom: 15%;
+    line-height: 20px;
+    right: 35%;
+}
+
+@media screen and (max-width: 1500px) {
+    .phone-img {
+       right: 5%;   
+    }
+
+    .click-here {
+        right: 32%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .hero-heading {
+        font-size: 36px;
+    }
+
+    .hero-description, a {
+        font-size: 16px;
+    }
+
+    
+
+    .phone-img {
+        height: 70%;
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .phone-img {
+        position: static;    
+    }
+    
+    .click-here {
+        position: static;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        font-size: 24px;
+        line-height: 24px;
+    }
+
+    .app-store {
+        display: flex;
+    }
+
+    .right-arrow {
+        display: none;
+    }
+
+    .row {
+        display: block;
+    }
+    
+    .column {
+        max-width: 100%;
+    }
+    .row {
+        padding-top: 0;
+    }
+}
+

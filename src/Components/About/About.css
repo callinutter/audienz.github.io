@@ -1,0 +1,28 @@
+.about-container {
+    background: #f0f0f0;
+    margin-left: -15px;
+    margin-right: -15px;
+    padding: 100px 260px;
+    text-align: center;
+}
+
+.about-row {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.about-column {
+    flex: 0 0 50%;
+    max-width: 50%;
+}
+
+.about-title {
+    color: #ff6580;
+    text-align: left;
+    font-size: 50px;
+}
+
+.about-description {
+    font-size: 22px;
+    text-align: left;
+}

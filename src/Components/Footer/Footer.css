@@ -1,0 +1,12 @@
+.footer-container {
+    text-align: center;
+    padding: 40px 0 80px 0;
+    background: linear-gradient(58deg, #ff6580 0%, #ff6580 20%, #EBA261 75%); 
+    margin: 0 -15px -15px;
+}
+
+a.footer-link {
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+}
