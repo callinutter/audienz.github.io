@@ -10,7 +10,7 @@ function ShareSection() {
                     <img className="circle-img" src="../../img/circle-girl.png" />
                 </div>
                 <div className="column-1">
-                    <h1 className="share-heading">This is your voice diary.</h1>
+                    <h1 className="share-heading">This is your social voice diary!</h1>
                     <p className="share-description">Share, discuss and discover the most intimate moments captured by you and the people around you.</p>
                     <div className="section-btns">
                         <Button 

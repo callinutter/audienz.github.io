@@ -43,6 +43,10 @@
     height: 600px;
 }
 
+.stars {
+    color: #fff;
+}
+
 .app-store {
     display: inline-flex;
     margin-top: 50px;
@@ -61,24 +65,9 @@
     right: 35%;
 }
 
-@media screen and (max-width: 1500px) {
-    .phone-img {
-       right: 5%;   
-    }
-
-    .click-here {
-        right: 32%;
-    }
-}
-
 @media screen and (max-width: 1024px) {
     .hero-heading {
         font-size: 36px;
-    }
-
-    .phone-img {
-        height: 70%;
-        position: absolute;
     }
 }
 
