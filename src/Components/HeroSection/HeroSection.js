@@ -1,6 +1,7 @@
 import React, {useState, useEffect} from 'react'
 import { Button } from '../Button'
 import './HeroSection.css'
+import "../Button.css";
 
 function HeroSection() {
     // let audio = new Audio("/sounds/teaser.mp3")
@@ -13,7 +14,7 @@ function HeroSection() {
     //     audio.pause();
     // }
     // const useAudio = () => {
-        const [audio] = useState(new Audio("/sounds/teaser.mp3"));
+        const [audio] = useState(new Audio("/sounds/teaser-final.mp3"));
         const [playing, setPlaying] = useState(false);
       
         const toggle = () => setPlaying(!playing);
@@ -27,16 +28,15 @@ function HeroSection() {
         <div className="hero-container">
             <div className="row">
                 <div className="column">
-                    <h1 className="hero-heading">The Most Personal Stories are told without a camera.</h1>
-                    <p className="hero-description">Share your best memories.</p>
+                    <h1 className="hero-heading">audienz.app <br /> TELL EVERY STORY.</h1>
+                    <p className="hero-description">Share your thoughts in short voicestories.</p>
                     <div className="hero-btns">
-                        <Button
-                        className="btns"
-                        buttonStyle="btn--outline"
-                        buttonSize="btn--large"
+                        <button
+                        className="btns hero-button btn--outline btn--large"
+                        onClick={toggle} 
                         >
-                        Start Now
-                        </Button>
+                        Let Me Listen! 
+                        </button>
                     </div>
                     <div className="app-store">
                         <div className="apple-store-link">
@@ -51,15 +51,14 @@ function HeroSection() {
                         </div>
                     </div>
                 </div>
-                <div className="column">
-                    <div className="click-here">
+                <div className="column phone-column">
+                    {/* <div className="click-here">
                         <img className="right-arrow" src="../../img/right-arrow.png" />
                         <br></br>
                         <p className="audio-description">click on the image to <br /> listen 
                         to an example</p>
-                    </div>
+                    </div> */}
                     <img 
-                    onClick={toggle} 
                     className="phone-img" 
                     src="../../img/hero-section-phone.png" 
                     alt="phone" />

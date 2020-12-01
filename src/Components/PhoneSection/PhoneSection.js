@@ -11,7 +11,7 @@ function PhoneSection() {
                     <p className="phone-description">DISCOVER <br />UNIQUE VOICESTORIES</p>
                 </div>
                 <div className="phone-column">
-                <img className="phone-img-1" src="../../img/phone-2.png" />
+                <img className="phone-img-1" src="../../img/phone.png" />
                     <p className="phone-description">RECORD <br />YOUR OWN STORIES</p>
                 </div>
                 <div className="phone-column">
@@ -24,7 +24,7 @@ function PhoneSection() {
                 className="btns"
                 buttonStyle="btn--primary"
                 buttonSize="btn--large"
-                >Download the app now</Button>
+                >Download audienz.app</Button>
             </div>
         </div>
     )

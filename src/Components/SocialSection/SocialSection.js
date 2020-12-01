@@ -4,7 +4,7 @@ import './SocialSection.css'
 function SocialSection() {
     return (
         <div className="social-container" id="contact">
-            <h1 className="social-heading" id="contact">BECOME PART OF OUR STORY</h1>
+            <h1 className="social-heading" id="contact">WHAT'S YOUR STORY?</h1>
             <div className="app-store contact-app-store">
                 <div className="apple-store-link">
                     <a href="https://apps.apple.com/us/app/id1516447240" target="_blank">

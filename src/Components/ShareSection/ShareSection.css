@@ -1,11 +1,11 @@
-h1 {
+.share-heading {
     color: #000;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 40px;
     padding-top: 50px;
 }
 
-p {
+.share-description {
     color: #000;
     font-size: 25px;
 }
@@ -47,6 +47,10 @@ p {
     }
 
     .circle-img {
-        height: 350px;
+        height: 300px;
+    }
+    .column-1 {
+        justify-self: center;
+        margin: auto;
     }
 }

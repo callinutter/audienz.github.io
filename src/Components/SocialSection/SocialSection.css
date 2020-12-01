@@ -16,6 +16,7 @@
 .email-link {
     color: #ff6580;
     margin-top: 80px;
+    font-size: 25px;
 }
 .email-link:hover, .email-container:hover, .social-icon-img:hover {
     color: #EBA261;
@@ -46,6 +47,6 @@
     }
 
     .email-link {
-        font-size: 20px;
+        font-size: 24px;
     }
 }

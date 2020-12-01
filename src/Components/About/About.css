@@ -40,13 +40,18 @@
     }
 
     .about-column {
-        flex: none;
-        max-width: 90%;
+        flex: auto;
+        max-width: 100%;
+        padding: 15px;
     }
     .about-title {
         text-align: center;
     }
     .about-description {
         text-align: center;
+    }
+
+    .about-img {
+        height: 300px;
     }
 }

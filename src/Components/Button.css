@@ -35,8 +35,22 @@
 }
 
 .btn--medium:hover, .btn--large:hover {
-    /* background: #fff;
-    color: #F26580;
-    transition: all 0.3s ease-out; */
     background-position: right center;
+}
+
+.hero-button {
+    border-radius: 15px;
+    width: 425px;
+}
+
+.hero-button:hover, .btn--outline:hover {
+    cursor: pointer;
+    border: 2px solid #eba261;
+    color: #eba261;
+}
+
+@media screen and (max-width: 960px) {
+    .hero-button {
+        width: 225px;
+    }
 }
