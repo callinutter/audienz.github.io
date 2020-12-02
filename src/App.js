@@ -9,6 +9,8 @@ import PhoneSection from './Components/PhoneSection/PhoneSection';
 import About from './Components/About/About';
 import SocialSection from './Components/SocialSection/SocialSection';
 import Footer from './Components/Footer/Footer';
+// import {useTranslation} from "react-i18next";
+
 
 
 

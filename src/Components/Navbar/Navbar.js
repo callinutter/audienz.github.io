@@ -2,6 +2,10 @@ import React, {useState, useEffect} from 'react';
 import { Link } from 'react-router-dom';
 import { NavHashLink } from 'react-router-hash-link'
 import "./Navbar.css";
+import {useTranslation} from "react-i18next";
+import LanguageToggle from '../LanguageToggle/LanguageToggle';
+
+
 
 function Navbar() {
 
@@ -25,7 +29,7 @@ function Navbar() {
 
     window.addEventListener("resize", showButton);
 
-
+    const {t, i18n} = useTranslation(['common']);
 
     return (
       <>
@@ -40,20 +44,21 @@ function Navbar() {
                 <ul className={click ? "nav-menu active" : "nav-menu"}>
                     <li className="nav-item">
                         <NavHashLink smooth to="./PhoneSection#the-app" className="nav-links" onClick={closeMobileMenu} offset={-80}>
-                            The App
+                            {t('navbar.title1')}
                         </NavHashLink>
                     </li>
                     <li className="nav-item">
                         <NavHashLink smooth to="./About#about" className="nav-links" onClick={closeMobileMenu} offset={-80}>
-                            About
+                            {t('navbar.title2')}
                         </NavHashLink>
                     </li>
                     <li className="nav-item">
                         <NavHashLink smooth to="./SocialSection#contact" className="nav-links" onClick={closeMobileMenu} offset={-80}>
-                            Contact
+                             {t('navbar.title3')}
                         </NavHashLink>
                     </li>
                 </ul>
+                <LanguageToggle />
             </div>
         </nav>
       </>

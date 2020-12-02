@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 // import { Button } from '../Button'
 import './Subscribe.css'
 import "../Button.css";
+import {useTranslation} from "react-i18next";
 
 
 const Subscribe = () => {
@@ -35,17 +36,20 @@ const Subscribe = () => {
           console.log(err);  
         }
     };
+
+    const {t, i18n} = useTranslation('common');
+
    
         return (
             <div className="container-2">
-                <h1 className="subscribe-header">WHAT'S NEXT?</h1>
-                <p className="subscribe-text">Join our newsletter to hear about the latest insights!</p>
+                <h1 className="subscribe-header">{t('subscribe.title')}</h1>
+                <p className="subscribe-text">{t('subscribe.description')}</p>
                 <form onSubmit={handleSubmit}>
                     <input 
                     className="email-input" 
                     type="email" id="email" 
                     name="email" 
-                    placeholder="Your email"
+                    placeholder={t('subscribe.placeholder')}
                     value={email}
                     onChange={handleChange}
                     />
@@ -54,7 +58,7 @@ const Subscribe = () => {
                         className='btn--outline btn--large btn'
                         type='submit'
                         >
-                        Subscribe
+                        {t('subscribe.button')}
                         </button>
                     </div>
                 </form>

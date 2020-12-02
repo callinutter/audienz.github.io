@@ -1,0 +1,29 @@
+.toggle-title {
+    color: #fff;
+    align-self: center;
+    margin-right: 10px;
+    font-size: 24px;
+}
+
+.toggle-btn {
+    margin-right: 10px;
+    padding: 8px 20px;
+    display: inline-block;
+    background-color: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 15px;
+    cursor: pointer;
+    align-self: center;
+    font-size: 22px;
+}
+
+.toggle-container {
+    display: flex;
+}
+
+@media screen and (max-width: 960px) {
+    .toggle-title {
+        display: none;
+    }
+}

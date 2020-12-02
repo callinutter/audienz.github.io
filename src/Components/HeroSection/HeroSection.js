@@ -2,6 +2,8 @@ import React, {useState, useEffect} from 'react'
 // import { Button } from '../Button'
 import './HeroSection.css'
 import "../Button.css";
+import {useTranslation} from "react-i18next";
+
 
 function HeroSection() {
     // let audio = new Audio("/sounds/teaser.mp3")
@@ -23,19 +25,21 @@ function HeroSection() {
             playing ? audio.play() : audio.pause();
           }
         );
+
+        const {t, i18n} = useTranslation('common');
       
     return (
         <div className="hero-container">
             <div className="row">
                 <div className="column">
-                    <h1 className="hero-heading">audienz.app <br /> TELL EVERY STORY.</h1>
-                    <p className="hero-description">Share all your thoughts in short voicestories now.</p>
+                    <h1 className="hero-heading">{t('heroSection.title1')} <br /> {t('heroSection.title2')}</h1>
+                    <p className="hero-description">{t('heroSection.description')}</p>
                     <div className="hero-btns">
                         <button
                         className="btns hero-button btn--outline btn--large"
                         onClick={toggle} 
                         >
-                        Let me listen! 
+                        {t('heroSection.button')}
                         </button>
                     </div>
                     <div className="app-store">
@@ -58,7 +62,7 @@ function HeroSection() {
                         <p className="audio-description">click on the image to <br /> listen 
                         to an example</p>
                     </div> */}
-                    <p className="stars">Rated 4.8/5 stars</p>
+                    <p className="stars">{t('heroSection.rate')}</p>
                     <img 
                     className="phone-img" 
                     src="../../img/disover-phone-1.png" 
