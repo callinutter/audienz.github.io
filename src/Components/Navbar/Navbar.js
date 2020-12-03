@@ -11,6 +11,7 @@ function Navbar() {
 
     const [click, setClick] = useState(false);
     const [button, setButton] = useState(true);
+    const [navbar, setNavbar] = useState(false);
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
@@ -29,12 +30,23 @@ function Navbar() {
 
     window.addEventListener("resize", showButton);
 
+    const changeBackground = () => {
+        if(window.scrollY >= 100) {
+            setNavbar(true);
+        } else {
+            setNavbar(false);
+        }
+    };
+
+    window.addEventListener('scroll', changeBackground);
+
     const {t, i18n} = useTranslation(['common']);
 
     return (
       <>
-        <nav className="navbar">
-            <div className="navbar-container">
+        <nav 
+        className={navbar ? 'navbar active' : 'navbar'}>
+            <div className={navbar ? 'navbar-container active' : 'navbar-container'}>
                 <NavHashLink smooth to="#top" className="navbar-logo" onClick={closeMobileMenu}>
                     <img className="navbar-logo" src="../../img/audienz-logo.png" alt="audienz-logo" />
                 </NavHashLink>
@@ -57,8 +69,11 @@ function Navbar() {
                              {t('navbar.title3')}
                         </NavHashLink>
                     </li>
+                    <li className={navbar ? 'nav-item toggle-item active' : 'nav-item toggle-item'}>
+                        <LanguageToggle  className="nav-links" onClick={closeMobileMenu} offset={-80} />
+                    </li>
                 </ul>
-                <LanguageToggle />
+                
             </div>
         </nav>
       </>

@@ -27,7 +27,7 @@
 
 @media screen and (max-width: 960px) {
     .phone-container {
-        padding: 100px 25px;
+        padding: 50px 25px;
     }
     .phone-row {
         display: grid;

@@ -37,9 +37,23 @@
     margin: 50px 0;
 }
 
+.app-store-1 {
+    display: inline-flex;
+    margin-top: 50px;
+}
+
+.apple-store-1, .google-store-1 {
+    height: 60px;
+    margin-right: 20px;
+}
+
 @media screen and (max-width: 960px) {
+    .social-container {
+        padding: 30px 25px;
+    }
+
     .social-heading {
-        font-size: 36px;
+        font-size: 32px;
     }
 
     .contact-app-store {
@@ -48,5 +62,30 @@
 
     .email-link {
         font-size: 24px;
+    }
+
+    .app-store-1 {
+        display: block;
+    }
+
+    .apple-store-link-1 {
+        margin-bottom: 20px;
+    }
+
+    .apple-store-1, .google-store-1 {
+        margin-right: 0;
+    }
+
+    .social-icons-img {
+        height: 30px;
+    }
+
+    .app-store-1.contact-app-store {
+        margin-top: 30px;
+    }
+
+    .apple-store, .google-store {
+        margin-right: 0;
+        height: 50px;
     }
 }

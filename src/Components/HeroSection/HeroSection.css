@@ -33,14 +33,19 @@
 .column {
     flex: 0 0 50%;
     max-width: 50%;
+    align-self: center;
 }
 
 .column.phone-column {
+    text-align: right;
+}
+
+.phone-text {
     text-align: center;
 }
 
 .phone-img {
-    height: 600px;
+    height: 700px;
 }
 
 .stars {
@@ -67,14 +72,20 @@
 
 @media screen and (max-width: 1024px) {
     .hero-heading {
-        font-size: 36px;
+        font-size: 32px;
     }
 }
 
 @media screen and (max-width: 960px) {
     .hero-container{
-        background: linear-gradient(50deg, #ff6580 0%, #ff6580 70%, #EBA261 93%);
-        padding: 10px 25px;
+        background: linear-gradient(50deg, #ff6580 0%, #ff6580 45%, #EBA261 90%);
+        padding: 80px 25px 25px;
+    }
+
+    .hero-heading {
+        font-size: 32px;
+        margin-bottom: 0;
+        margin-top: 10px;
     }
 
     .phone-img {
@@ -82,6 +93,11 @@
         justify-self: center;
         margin: auto;
         padding: 20px;
+        height: 300px;
+    }
+
+    .column.phone-column {
+        text-align: center;
     }
     
     .click-here {
@@ -93,16 +109,22 @@
         line-height: 24px;
     }
 
-    .app-store {
-        display: block;
-    }
+   
 
-    .right-arrow {
+    .app-store {
         display: none;
     }
 
+    .stars {
+        font-size: 14px;
+        text-align: center;
+        margin-top: 10px;
+        margin-top: 20px;
+        margin-bottom: -10px;
+    }
+
     .row {
-        display: flex;
+        display: inline-block;
     }
     
     .column {
@@ -119,7 +141,8 @@
     }
 
     .hero-description {
-        font-size: 20px;
+        font-size: 16px;
+        margin-bottom: 20px;
     }
 }
 

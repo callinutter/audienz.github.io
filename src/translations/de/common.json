@@ -11,21 +11,21 @@
 
     "heroSection": {
         "title1": "audienz.app",
-        "title2": "JEDE GESCHICHTE ERZÄHLEN",
-        "description": "Teilen Sie jetzt alle Ihre Gedanken in kurzen Sprachgeschichten mit.",
+        "title2": "TELL EVERY STORY",
+        "description": "Teile deine intimsten Gedanken & Momente in kurzen Voicestories!",
         "rate": "Bewertet mit 4,8/5 Sternen",
-        "button": "Lassen Sie mich zuhören!"
+        "button": "So klingt audienz.app!"
     },
 
     "share": {
-        "title": "Dies ist das Tagebuch Ihrer sozialen Stimme!",
-        "description": "Teilen, diskutieren und entdecken Sie die intimsten Momente, die Sie und die Menschen um Sie herum eingefangen haben.",
-        "button": "Lassen Sie mich meine Geschichte erklären!"
+        "title": "Die App als dein Tagebuch.",
+        "description": "Teile, diskutiere und entdecke die intimsten Momente, eingefangen von dir und den Leuten um dich herum.",
+        "button": "Lass mich erzählen!"
     },
 
     "subscribe": {
-        "title": "WAS NÄCHSTE?",
-        "description": "Melden Sie sich für unseren Newsletter an, um über die neuesten Erkenntnisse zu erfahren!",
+        "title": "Was kommt als nächstes?",
+        "description": "Trag dich in unserem Newsletter ein, um über alle Neuigkeiten informiert zu werden!",
         "placeholder": "Ihre E-Mail",
         "button": "Abonnieren Sie"
     },
@@ -37,16 +37,16 @@
         "description4": "IHRE EIGENEN GESCHICHTEN",
         "description5": "TEILEN",
         "description6": "NUR IHRE STIMME",
-        "button": "audienz.app herunterladen"
+        "button": "Jetzt audienz.app herunterladen"
     },
 
     "about": {
-        "title": "JEDE GESCHICHTE ERZÄHLEN",
-        "description": "Hallo, wir sind Pauline & Florian, die Gründer von audienz.app. In den 10 Jahren unserer Freundschaft haben wir hunderte von schönen Momenten zusammen erlebt. Die traurige Tatsache ist, dass die meisten dieser großartigen Geschichten vergessen und durch das erstaunliche Chaos des Lebens überschrieben werden - verloren in den Millionen von Bildern und Texten, die wir täglich austauschen. Aber wie war es wirklich? Wie hat es sich angefühlt? Deshalb haben wir audienz.app geschaffen, wo Sie all Ihre persönlichen Geschichten mit dem intimsten und wahrhaftigsten Medium aller Zeiten erzählen können: Ihrer eigenen Stimme."
+        "title": "DAS IST UNSERE GESCHICHTE",
+        "description": "Hey, wir sind Pauline & Florian, die Gründer von audienz.app. In den letzten 11 (!) Jahren unserer Freundschaft haben wir schon tausende von erinnerungswürdigen Geschichten zusammen erlebt. Die traurige Tatsache ist aber, dass die meisten dieser großartigen Momente vergessen und oft auch einfach durch das wunderbare Chaos des Lebens überschrieben werden. Sie gehen verloren in den Millionen von Bildern und Texten, die wir täglich austauschen. Aber wie war es wirklich? Wie hat es sich angefühlt und angehört? Genau das wollen wir mit audienz.app festhalten, dem Ort wo all deine persönlichen Geschichten mit dem intimsten und ehrlichsten Medium aller Zeiten erzählen kannst: Deiner eigenen Stimme."
     },
 
     "social": {
-        "title": "WAS IST IHRE GESCHICHTE?"
+        "title": "Was ist deine Geschichte?"
     },
 
     "footer": {

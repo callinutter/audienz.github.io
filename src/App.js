@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect, useRef} from 'react';
 import Navbar from './Components/Navbar/Navbar';
 import './index.css';
 import {BrowserRouter as Router} from 'react-router-dom';
@@ -15,6 +15,23 @@ import Footer from './Components/Footer/Footer';
 
 
 function App() {
+  // const [navBackground, setNavBackground] = useState(false)
+
+  // const navRef = useRef()
+  //   navRef.current = navBackground
+  //   useEffect(() => {
+  //       const handleScroll = () => {
+  //           const show = window.scrollY > 670
+  //           if (navRef.current !== show) {
+  //               setNavBackground(show)
+  //           }
+  //       }
+  //       document.addEventListener('scroll', handleScroll)
+  //       return () => {
+  //           document.removeEventListener('scroll', 'handleScroll')
+  //       }
+  //   }, []);
+
   return (
     <>
       <Router>

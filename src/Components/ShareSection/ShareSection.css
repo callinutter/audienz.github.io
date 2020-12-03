@@ -33,13 +33,14 @@
 }
 
 @media screen and (max-width: 960px) {
-    h1 {
+    .share-heading {
         padding-top: 0;
-        font-size: 36px;
+        font-size: 32px;
     }
 
-    p {
-        font-size: 20px;
+    .share-description {
+        font-size: 16px;
+        text-align: center;
     }
     .container-1 {
         padding: 20px 25px;

@@ -8,27 +8,30 @@
 
 .about-row {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
 }
 
 .about-column {
-    flex: 0 0 50%;
-    max-width: 50%;
+    flex: 0 0 60%;
+    max-width: 60%;
 }
 
 .about-title {
     color: #ff6580;
     text-align: left;
     font-size: 50px;
+    margin-bottom: 0;
 }
 
 .about-description {
-    font-size: 22px;
+    font-size: 20px;
     text-align: left;
+    line-height: 1.8;
 }
 
 .image-column {
     align-self: center;
+    max-width: 40%;
 }
 
 .about-img {
@@ -37,11 +40,11 @@
 
 @media screen and (max-width: 960px) {
     .about-container {
-        padding: 10px 26px;
+        padding: 30px 26px;
     }
 
     .about-row {
-        display: flex;
+        display: block;
         justify-content: center;
         justify-items: center;
         text-align: center;
@@ -53,10 +56,14 @@
         padding: 15px;
     }
     .about-title {
+        font-size: 32px;
         text-align: center;
+        margin-top: 0;
     }
     .about-description {
-        text-align: center;
+        text-align: justify;
+        font-size: 18px;
+        line-height: 1.5;
     }
 
     .about-img {

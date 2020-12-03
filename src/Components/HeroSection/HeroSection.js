@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react'
 import './HeroSection.css'
 import "../Button.css";
 import {useTranslation} from "react-i18next";
-
+import { FaStar, FaStarHalf } from "react-icons/fa";
 
 function HeroSection() {
     // let audio = new Audio("/sounds/teaser.mp3")
@@ -62,7 +62,8 @@ function HeroSection() {
                         <p className="audio-description">click on the image to <br /> listen 
                         to an example</p>
                     </div> */}
-                    <p className="stars">{t('heroSection.rate')}</p>
+                    <p className="stars"><FaStar/><FaStar/><FaStar/><FaStar/><FaStarHalf/><br/>
+                    {t('heroSection.rate')}</p>
                     <img 
                     className="phone-img" 
                     src="../../img/phone-mockup-1.png" 
