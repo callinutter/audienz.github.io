@@ -31,6 +31,10 @@
     align-self: center;
 }
 
+.about-img {
+    height: 425px;
+}
+
 @media screen and (max-width: 960px) {
     .about-container {
         padding: 10px 26px;

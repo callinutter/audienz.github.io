@@ -11,15 +11,15 @@ function PhoneSection() {
         <div className="phone-container" id="the-app">
             <div className="phone-row">
                 <div className="phone-column">
-                    <img className="phone-img-1" src="../../img/phone-1.png" alt="phone-1"/>
+                    <img className="phone-img-1" src="../../img/phone-mockup-1.png" alt="phone-1"/>
                     <p className="phone-description">{t('phone.description1')} <br />{t('phone.description2')}</p>
                 </div>
                 <div className="phone-column">
-                <img className="phone-img-1" src="../../img/phone.png" />
+                <img className="phone-img-1" src="../../img/phone-mockup-2.png" />
                     <p className="phone-description">{t('phone.description3')} <br />{t('phone.description4')}</p>
                 </div>
                 <div className="phone-column">
-                <img className="phone-img-1" src="../../img/phone-3.png" />
+                <img className="phone-img-1" src="../../img/phone-mockup-3.png" />
                     <p className="phone-description">{t('phone.description5')} <br />{t('phone.description6')}</p>
                 </div>
             </div>

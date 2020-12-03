@@ -65,7 +65,7 @@ function HeroSection() {
                     <p className="stars">{t('heroSection.rate')}</p>
                     <img 
                     className="phone-img" 
-                    src="../../img/disover-phone-1.png" 
+                    src="../../img/phone-mockup-1.png" 
                     alt="phone" />
                     
                 </div>
