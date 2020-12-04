@@ -53,9 +53,9 @@ function HeroSection() {
                                 <img className="google-store" src="../../img/google-play-store.png" />
                             </a>
                         </div>
-                        <p className="stars"><FaStar/><FaStar/><FaStar/><FaStar/><FaStar/><br/>
-                    {t('heroSection.rate')}</p>
                     </div>
+                    <p className="stars"><FaStar/><FaStar/><FaStar/><FaStar/><FaStar/> <span />
+                    {t('heroSection.rate')}</p>
                 </div>
                 <div className="column phone-column-1">
                     {/* <div className="click-here">

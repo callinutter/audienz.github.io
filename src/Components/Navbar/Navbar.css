@@ -18,6 +18,7 @@
   .navbar.active {
     background: #ff6580;
     opacity: 0.8;
+    padding-top: 10px;
   }
   
   .navbar-container {
@@ -34,15 +35,21 @@
   }
   
   .navbar-logo {
+    /* background-image: url("../../images/audienz-logo.png"); */
     color: #fff;
     justify-self: start;
     margin-left: 10px;
-    margin-top: 5px;
+    /* margin-top: 5px; */
     cursor: pointer;
     text-decoration: none;
     font-size: 2rem;
     display: flex;
     align-items: center;
+    height: 65px;
+  }
+
+  .navbar-logo.active {
+    /* background-image: url("../../images/audienz_ws.png"); */
     height: 65px;
   }
   
@@ -163,7 +170,7 @@
   
     .navbar-logo {
       position: fixed;
-      top: 0;
+      top: 10px;
       left: 0;
     }
   

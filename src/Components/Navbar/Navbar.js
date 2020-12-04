@@ -46,8 +46,9 @@ function Navbar() {
         <nav 
         className={navbar ? 'navbar active' : 'navbar'}>
             <div className={navbar ? 'navbar-container active' : 'navbar-container'}>
-                <NavHashLink smooth to="#top" className="navbar-logo" onClick={closeMobileMenu}>
-                    <img className="navbar-logo" src="../../img/audienz-logo.png" alt="audienz-logo" />
+                <NavHashLink smooth to="#top" className='navbar-logo'onClick={closeMobileMenu}>
+                    <img className='navbar-logo' src="../../img/audienz-logo.png" style={{display: navbar ? 'none' : 'flex'}} alt="audienz-logo" />
+                    <img className='navbar-logo' src="../../images/audienz_ws.png" style={{display: navbar ? 'flex' : 'none'}} alt="audienz-logo-alt" />
                 </NavHashLink>
                 <div className={navbar ? 'menu-icon active' : 'menu-icon'} onClick={handleClick}>
                     <i className={click ? "fas fa-times" : "fas fa-bars"} />

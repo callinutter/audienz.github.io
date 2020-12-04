@@ -52,6 +52,9 @@
 .stars {
     color: #fff;
     margin-top: 4px;
+    text-align: center;
+    width: 400px;
+    margin-top: 10px;
 }
 
 .app-store {
