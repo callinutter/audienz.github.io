@@ -1,5 +1,4 @@
 import React, {useState, useEffect} from 'react';
-import { Link } from 'react-router-dom';
 import { NavHashLink } from 'react-router-hash-link'
 import "./Navbar.css";
 import {useTranslation} from "react-i18next";
@@ -10,25 +9,25 @@ import LanguageToggle from '../LanguageToggle/LanguageToggle';
 function Navbar() {
 
     const [click, setClick] = useState(false);
-    const [button, setButton] = useState(true);
+    // const [button, setButton] = useState(true);
     const [navbar, setNavbar] = useState(false);
 
     const handleClick = () => setClick(!click);
     const closeMobileMenu = () => setClick(false);
 
-    const showButton = () => {
-        if(window.innerWidth <= 960) {
-            setButton(false);
-        } else {
-            setButton(true);
-        }
-    };
+    // const showButton = () => {
+    //     if(window.innerWidth <= 960) {
+    //         setButton(false);
+    //     } else {
+    //         setButton(true);
+    //     }
+    // };
 
-    useEffect(() => {
-        showButton();
-    }, []); 
+    // useEffect(() => {
+    //     showButton();
+    // }, []); 
 
-    window.addEventListener("resize", showButton);
+    // window.addEventListener("resize", showButton);
 
     const changeBackground = () => {
         if(window.scrollY >= 100) {
@@ -40,7 +39,7 @@ function Navbar() {
 
     window.addEventListener('scroll', changeBackground);
 
-    const {t, i18n} = useTranslation(['common']);
+    const {t} = useTranslation(['common']);
 
     return (
       <>
@@ -50,7 +49,7 @@ function Navbar() {
                 <NavHashLink smooth to="#top" className="navbar-logo" onClick={closeMobileMenu}>
                     <img className="navbar-logo" src="../../img/audienz-logo.png" alt="audienz-logo" />
                 </NavHashLink>
-                <div className="menu-icon" onClick={handleClick}>
+                <div className={navbar ? 'menu-icon active' : 'menu-icon'} onClick={handleClick}>
                     <i className={click ? "fas fa-times" : "fas fa-bars"} />
                 </div>
                 <ul className={click ? "nav-menu active" : "nav-menu"}>

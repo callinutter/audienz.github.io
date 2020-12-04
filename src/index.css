@@ -19,7 +19,8 @@
 }
 
 @media screen and (max-width: 960px) {
-  body {
+  body{
     text-align: center;
+    overflow-x: hidden;
   }
 }

@@ -3,7 +3,7 @@ import React, {useState, useEffect} from 'react'
 import './HeroSection.css'
 import "../Button.css";
 import {useTranslation} from "react-i18next";
-import { FaStar, FaStarHalf } from "react-icons/fa";
+import { FaStar } from "react-icons/fa";
 
 function HeroSection() {
     // let audio = new Audio("/sounds/teaser.mp3")
@@ -26,7 +26,7 @@ function HeroSection() {
           }
         );
 
-        const {t, i18n} = useTranslation('common');
+        const {t} = useTranslation('common');
       
     return (
         <div className="hero-container">
@@ -53,17 +53,18 @@ function HeroSection() {
                                 <img className="google-store" src="../../img/google-play-store.png" />
                             </a>
                         </div>
+                        <p className="stars"><FaStar/><FaStar/><FaStar/><FaStar/><FaStar/><br/>
+                    {t('heroSection.rate')}</p>
                     </div>
                 </div>
-                <div className="column phone-column">
+                <div className="column phone-column-1">
                     {/* <div className="click-here">
                         <img className="right-arrow" src="../../img/right-arrow.png" />
                         <br></br>
                         <p className="audio-description">click on the image to <br /> listen 
                         to an example</p>
                     </div> */}
-                    <p className="stars"><FaStar/><FaStar/><FaStar/><FaStar/><FaStarHalf/><br/>
-                    {t('heroSection.rate')}</p>
+                    
                     <img 
                     className="phone-img" 
                     src="../../img/phone-mockup-1.png" 
