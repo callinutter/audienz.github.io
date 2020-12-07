@@ -1,11 +1,24 @@
+.hero-section {
+    background: linear-gradient(38deg, #ff6580 50%, #ff6580 50%, #EBA261 85%); 
+    padding-top: 175px;
+    padding-bottom: 50px;
+    box-shadow: 0 10px 10px -6px gray;
+}
+
 .hero-heading {
-    font-size: 60px;
+    font-size: 56px;
     color: #fff;
+    margin-top: 10px;
+    font-family: 'Poppins';
+}
+
+.hero-heading-img {
+    height: 140px;
 }
 
 .hero-description {
     font-weight: 300;
-    font-size: 25px;
+    font-size: 20px;
     margin-bottom: 40px;
     color: #fff;
 }
@@ -23,7 +36,7 @@
     margin-right: -15px;
 }
 
-.row {
+/* .row {
     display: flex;
     flex-wrap: wrap;
     margin-right: -15px;
@@ -34,19 +47,19 @@
     flex: 0 0 60%;
     max-width: 60%;
     align-self: center;
-}
+} */
 
-.phone-column-1 {
+/* .phone-column-1 {
     text-align: right;
     max-width: 40%;
-}
+} */
 
 .phone-text {
     text-align: center;
 }
 
 .phone-img {
-    height: 700px;
+    height: 600px;
 }
 
 .stars {
@@ -55,6 +68,11 @@
     text-align: center;
     width: 400px;
     margin-top: 10px;
+    font-size: 20px;
+}
+
+.star {
+    margin-right: 4px;
 }
 
 .app-store {
@@ -75,22 +93,33 @@
     right: 35%;
 }
 
-@media screen and (max-width: 1024px) {
+
+ @media screen and (max-width: 1024px) {
     .hero-heading {
         font-size: 32px;
     }
 }
 
 @media screen and (max-width: 960px) {
+    .hero-section {
+        padding-top: 80px;
+        padding-bottom: 30px;
+    }
+
     .hero-container{
         background: linear-gradient(50deg, #ff6580 0%, #ff6580 45%, #EBA261 90%);
-        padding: 80px 25px 25px;
+        /* padding: 80px 25px 25px; */
     }
 
     .hero-heading {
         font-size: 32px;
         margin-bottom: 0;
         margin-top: 10px;
+    }
+
+    .hero-heading-img {
+        height: 90px;
+        margin-top: 20px;
     }
 
     .phone-img {
@@ -149,5 +178,5 @@
         font-size: 16px;
         margin-bottom: 20px;
     }
-}
+} 
 

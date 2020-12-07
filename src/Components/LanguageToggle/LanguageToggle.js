@@ -9,7 +9,7 @@ function LanguageToggle()
     return (
         <div className="toggle-container">
             <button className="toggle-btn" onClick={() => i18n.changeLanguage('de')}>🇩🇪</button>
-            <p style={{color: '#fff', fontSize: '20px', alignSelf: 'center', marginRight: 10}}> | </p>
+            <p style={{color: '#fff', fontSize: '20px', alignSelf: 'center', marginRight: 10, paddingTop: 10}}> | </p>
             <button className="toggle-btn" onClick={() => i18n.changeLanguage('en')}>🇬🇧</button>
         </div>
     )

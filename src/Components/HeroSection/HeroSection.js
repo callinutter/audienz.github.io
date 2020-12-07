@@ -4,6 +4,7 @@ import './HeroSection.css'
 import "../Button.css";
 import {useTranslation} from "react-i18next";
 import { FaStar } from "react-icons/fa";
+import { Container, Row, Col, Button } from 'react-bootstrap';
 
 function HeroSection() {
     // let audio = new Audio("/sounds/teaser.mp3")
@@ -29,10 +30,12 @@ function HeroSection() {
         const {t} = useTranslation('common');
       
     return (
-        <div className="hero-container">
-            <div className="row">
-                <div className="column">
-                    <h1 className="hero-heading">{t('heroSection.title1')} <br /> {t('heroSection.title2')}</h1>
+        <section class='hero-section'>
+        <Container>
+            <Row>
+                <Col xs={12} md={8}>
+                    <img className="hero-heading-img" src="../../images/audienz_ws.png" alt="audienz.app" />
+                    <h1 className="hero-heading"><strong>{t('heroSection.title2')}</strong></h1>
                     <p className="hero-description">{t('heroSection.description')}</p>
                     <div className="hero-btns">
                         <button
@@ -54,10 +57,10 @@ function HeroSection() {
                             </a>
                         </div>
                     </div>
-                    <p className="stars"><FaStar/><FaStar/><FaStar/><FaStar/><FaStar/> <span />
+                    <p className="stars"><FaStar className="star"/><FaStar className="star"/><FaStar className="star"/><FaStar className="star"/><FaStar className="star"/> <span />
                     {t('heroSection.rate')}</p>
-                </div>
-                <div className="column phone-column-1">
+                </Col>
+                <Col xs={12} md={4}>
                     {/* <div className="click-here">
                         <img className="right-arrow" src="../../img/right-arrow.png" />
                         <br></br>
@@ -70,9 +73,10 @@ function HeroSection() {
                     src="../../img/phone-mockup-1.png" 
                     alt="phone" />
                     
-                </div>
-            </div>
-        </div>
+                </Col>
+            </Row>
+        </Container>
+        </section>
     )
 }
 

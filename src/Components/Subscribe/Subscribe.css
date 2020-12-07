@@ -1,19 +1,21 @@
-.container-2 {
-    background: linear-gradient(38deg, #ff6580 50%, #ff6580 40%, #EBA261 80%); 
+.subscribe-section {
+    background-color: #ff6580;
     text-align: center;
-    margin: -35px -15px;
-    padding-top: 5px;
-    padding-bottom: 80px;
+    padding-top: 80px;
+    padding-bottom: 10px;
+    box-shadow: 0 10px 10px -6px gray;
+
 }
 
 .subscribe-header {
     color: #fff;
-    font-size: 60px;
+    font-size: 56px;
 }
 
 .subscribe-text {
     color: #fff;
     font-size: 20px;
+    font-weight: 300;
 }
 
 .email-input {
@@ -29,6 +31,7 @@
 
 ::placeholder {
     color: #fff;
+    font-size: 16px;
 }
 
 .subscribe-btn {

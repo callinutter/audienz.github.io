@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import './Subscribe.css'
 import "../Button.css";
 import {useTranslation} from "react-i18next";
+import { Container } from 'react-bootstrap';
 
 
 const Subscribe = () => {
@@ -41,8 +42,9 @@ const Subscribe = () => {
 
    
         return (
-            <div className="container-2">
-                <h1 className="subscribe-header">{t('subscribe.title')}</h1>
+            <section className="subscribe-section">
+            <Container>
+                <h1 className="subscribe-header"><strong>{t('subscribe.title')}</strong></h1>
                 <p className="subscribe-text">{t('subscribe.description')}</p>
                 <form onSubmit={handleSubmit}>
                     <input 
@@ -55,14 +57,15 @@ const Subscribe = () => {
                     />
                     <div className="subscribe-btn">
                         <button
-                        className='btn--outline btn--large btn'
+                        className='btn--outline btn--medium btn'
                         type='submit'
                         >
                         {t('subscribe.button')}
                         </button>
                     </div>
                 </form>
-            </div>
+            </Container>
+            </section>
         )
     }
 

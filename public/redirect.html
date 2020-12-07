@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" type="text/css" content="width=device-width,initial-scale=1.0">
+    <title>audienz.app - Your voicestory. Your audienz.</title>
+    <link rel="icon" href="images/audienz_Bildmarke_not_transparent.png">
+    <link href="css/redirect.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+
+    <meta property="og:image" content="images/audienz_4c.png" />
+
+    <meta property="og:title" content="audienz.app - Your voicestory. Your audienz." />
+
+  </head>
+  <body>
+    <div class="pink-background">
+      <div class="logo-top">
+        <img class="logo-redirect" src="images/audienz_ws.png"/>
+      </div>
+      <div class="centered-redirect">
+        <div class="left">
+          <div class="audio_player redirect">
+            <audio id="player" src=""></audio>
+              <div class="playerControlArea">
+                <button 
+                class="playerControlButton play" 
+                id="play" 
+                onclick="{document.getElementById('player').play(); document.getElementById('stop').style.display='inline-block'; document.getElementById('play').style.display='none';}">
+                <img src="images/play_grad.png" class="playerControls"/>
+              </button> 
+                <button 
+                class="playerControlButton stop" 
+                id="stop" 
+                onclick="{document.getElementById('player').pause(); document.getElementById('play').style.display='inline-block'; document.getElementById('stop').style.display='none';}">
+                <img src="images/pause_grad.png" class="playerControls"/>
+              </button> 
+                <div id="audio_duration" class="audio_duration"></div>
+                <div id="audio_title" class="audio_title"></div>
+                <div id="audio_author" class="audio_author"></div>
+                <!-- <image class="blank-phone" src="img/blank-phone.png" alt="blank-phone"/> -->
+
+              </div>
+            </div>
+            <a class="share_button" onclick="window.open(window.location.href, '_blank', 'location=yes');">
+              <span class="share">share</span>
+              <image class="share-icon" src="images/share_2.png"/>
+            </a>
+          </div>
+          <div class="right margin">
+            <div class="headingRedirect">Want to hear more?</div>
+            <span class="descriptionRedirect">Or share your own voicestory? Join our storyteller community by downloading audienz.app now for free!</span>
+            <div class="storeLinksRedirect">
+              <a class="link" href="https://play.google.com/store/apps/details?id=audienzapp.com" target="_blank">
+                <img src="images/google-play-store.png" alt="Google Play Store Batch" width="180"/>
+              </a>
+              <a class="link" href="https://apps.apple.com/us/app/id1516447240" target="_blank">
+                <img src="images/app-store.png" alt="Apple Store Batch" width="178" />
+              </a>
+            </div>
+            <div class="deepLink">
+              <button id="android-redirect" class="deepLink" onclick="linkToApp()">
+                or <span class="underline">open voicestory in app</span>
+              </button>
+            </div>
+            <p style="font-weight: 200; color: white;">Click on the image to listen</p>
+          </div>
+          <div id="contact">
+            <div class="imprint-link footer">
+                <a class="footer-left" href="impressum.html">Imprint / Data Policy</a>
+                <a class="footer-right" href="agbs.html">AGBs</a>
+            </div>
+          </div>
+      </div>
+    </div>
+
+      <script>
+        window.onload = async function() {
+          const url = window.location.href;
+          let id = url.split('?')[1];
+          if (id.indexOf("&") >= 0) {
+            id = id.substr(0, id.indexOf("&"));
+          }
+          let response = await fetch('https://audienzappbackend.herokuapp.com/audios/' + id);
+          if(response.ok){
+            let json = await response.json();
+            let url = json.audio_file;
+            let title = json.audio_title;
+            let author = json.audio_author;
+            let duration = json.audio_duration;
+            document.getElementById("player").src = url;
+            document.getElementById("audio_title").innerHTML = title;
+            document.getElementById("audio_author").innerHTML = "by " + author;
+            document.getElementById("audio_duration").innerHTML = duration;
+          }
+        }
+
+        linkToApp = function() {
+            const url = window.location.href;
+            const id = url.split('?')[1];
+            if(!!navigator.platform && /iPad|iPhone|iPod/.test(navigator.platform)){
+              window.location.href = 'audienzapp://root/audio/detail/' + id;
+              console.log('audio is here');
+            }
+            else{
+              window.location.replace('audienzapp.com://root/audio/detail/' + id);
+            }
+            return false;
+        }
+      </script>
+  </body>
+</html>

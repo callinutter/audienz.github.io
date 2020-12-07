@@ -1,14 +1,16 @@
 import React from 'react'
 import './SocialSection.css'
 import {useTranslation} from "react-i18next";
+import { Container } from 'react-bootstrap'
 
 
 function SocialSection() {
     const {t, i18n} = useTranslation('common');
 
     return (
-        <div className="social-container" id="contact">
-            <h1 className="social-heading" id="contact">{t('social.title')}</h1>
+        <section className="social-section"  id="contact">
+        <Container>
+            <h1 className="social-heading" id="contact"><strong>{t('social.title')}</strong></h1>
             <div className="app-store-1 contact-app-store">
                 <div className="apple-store-link-1">
                     <a href="https://apps.apple.com/us/app/id1516447240" target="_blank">
@@ -47,7 +49,8 @@ function SocialSection() {
                 <a className="email-link" href="mailto:hello@audienz.app" target="_blank">hello@audienz.app
                 </a>  
             </div> 
-         </div>
+         </Container>
+         </section>
     )
 }
 
