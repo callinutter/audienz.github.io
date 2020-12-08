@@ -29,31 +29,6 @@
     text-decoration: none;
 }
 
-.hero-container {
-    padding: 100px 350px;
-    background: linear-gradient(38deg, #ff6580 50%, #ff6580 50%, #EBA261 85%); 
-    margin-left: -15px;
-    margin-right: -15px;
-}
-
-/* .row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
-}
-
-.column {
-    flex: 0 0 60%;
-    max-width: 60%;
-    align-self: center;
-} */
-
-/* .phone-column-1 {
-    text-align: right;
-    max-width: 40%;
-} */
-
 .phone-text {
     text-align: center;
 }
@@ -104,11 +79,7 @@
     .hero-section {
         padding-top: 80px;
         padding-bottom: 30px;
-    }
-
-    .hero-container{
-        background: linear-gradient(50deg, #ff6580 0%, #ff6580 45%, #EBA261 90%);
-        /* padding: 80px 25px 25px; */
+        text-align: center;
     }
 
     .hero-heading {
@@ -129,10 +100,6 @@
         padding: 20px;
         height: 300px;
     }
-
-    .column.phone-column-1 {
-        text-align: center;
-    }
     
     .click-here {
         position: static;
@@ -142,8 +109,6 @@
         font-size: 24px;
         line-height: 24px;
     }
-
-   
 
     .app-store {
         display: none;
@@ -155,19 +120,7 @@
         margin-top: 10px;
         margin-top: 20px;
         margin-bottom: -10px;
-    }
-
-    .row {
-        display: inline-block;
-    }
-    
-    .column {
-        max-width: 100%;
-        justify-content: center;
-        margin: auto;
-    }
-    .row {
-        padding-top: 0;
+        width: 100%;
     }
 
     .apple-store, .google-store {

@@ -3,7 +3,7 @@ import { NavHashLink } from 'react-router-hash-link'
 import "./Navbar.css";
 import {useTranslation} from "react-i18next";
 import LanguageToggle from '../LanguageToggle/LanguageToggle';
-
+import { Nav } from 'react-bootstrap'
 
 
 function Navbar() {
@@ -43,29 +43,43 @@ function Navbar() {
 
     return (
       <>
-        <nav 
+        <Nav expand="lg"
         className={navbar ? 'navbar active' : 'navbar'}>
             <div className={navbar ? 'navbar-container active' : 'navbar-container'}>
                 <NavHashLink smooth to="#top" className='navbar-logo'onClick={closeMobileMenu}>
                     <img className='navbar-logo' src="../../img/audienz-logo.png" style={{display: navbar ? 'none' : 'flex'}} alt="audienz-logo" />
-                    <img className='navbar-logo' src="../../images/audienz_ws.png" style={{display: navbar ? 'flex' : 'none'}} alt="audienz-logo-alt" />
+                    <img className='navbar-logo' src="../../images/audienz_ws_pink.png" style={{display: navbar ? 'flex' : 'none'}} alt="audienz-logo-alt" />
                 </NavHashLink>
                 <div className={navbar ? 'menu-icon active' : 'menu-icon'} onClick={handleClick}>
                     <i className={click ? "fas fa-times" : "fas fa-bars"} />
                 </div>
                 <ul className={click ? "nav-menu active" : "nav-menu"}>
                     <li className="nav-item">
-                        <NavHashLink smooth to="./PhoneSection#the-app" className="nav-links" onClick={closeMobileMenu} offset={-80}>
+                        <NavHashLink smooth 
+                        to="./PhoneSection#the-app" 
+                        className={navbar ? 'nav-links active' : 'nav-links'} 
+                        onClick={closeMobileMenu} 
+                        offset={-80}
+                        >
                             {t('navbar.title1')}
                         </NavHashLink>
                     </li>
                     <li className="nav-item">
-                        <NavHashLink smooth to="./About#about" className="nav-links" onClick={closeMobileMenu} offset={-80}>
+                        <NavHashLink smooth to="./About#about" 
+                        className={navbar ? 'nav-links active' : 'nav-links'}  
+                        onClick={closeMobileMenu} 
+                        offset={-80}
+                        >
                             {t('navbar.title2')}
                         </NavHashLink>
                     </li>
                     <li className="nav-item">
-                        <NavHashLink smooth to="./SocialSection#contact" className="nav-links" onClick={closeMobileMenu} offset={-80}>
+                        <NavHashLink smooth 
+                        to="./SocialSection#contact" 
+                        className={navbar ? 'nav-links active' : 'nav-links'}  
+                        onClick={closeMobileMenu} 
+                        offset={-80}
+                        >
                              {t('navbar.title3')}
                         </NavHashLink>
                     </li>
@@ -75,7 +89,7 @@ function Navbar() {
                 </ul>
                 
             </div>
-        </nav>
+        </Nav>
       </>
     )
 }

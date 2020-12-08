@@ -26,22 +26,22 @@ function SocialSection() {
             <div className="social-icons">
                 <div className="social-icon-link">
                     <a href="https://www.instagram.com/audienz.app/" target="_blank">
-                        <img className="social-icons-img" src="../../img/instagram.png" />
+                        <img className="social-icons-img" src="../../img/insta.svg" alt="instagram"/>
                     </a>
                 </div>
                 <div className="social-icon-link">
                     <a href="https://www.linkedin.com/company/audienz-app/" target="_blank">
-                        <img className="social-icons-img" src="../../img/linkedin.png" />
+                        <img className="social-icons-img" src="../img/linkedin.svg" />
                     </a>
                 </div>
                 <div className="social-icon-link">
                     <a href="https://www.facebook.com/audienz.app.community" target="_blank">
-                        <img className="social-icons-img" src="../../img/facebook.png" />
+                        <img className="social-icons-img" src="../../img/facebook.svg" />
                     </a>
                 </div>
                 <div className="social-icon-link">
                     <a href="https://wa.me/4915792337848" target="_blank">
-                        <img className="social-icons-img" src="../../img/whatsapp.png" />
+                        <img className="social-icons-img" src="../../img/WhatsApp.svg" />
                     </a>
                 </div>
             </div>

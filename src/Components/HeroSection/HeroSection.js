@@ -30,7 +30,7 @@ function HeroSection() {
         const {t} = useTranslation('common');
       
     return (
-        <section class='hero-section'>
+        <section className='hero-section'>
         <Container>
             <Row>
                 <Col xs={12} md={8}>
