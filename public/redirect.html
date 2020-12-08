@@ -15,6 +15,7 @@
 
   </head>
   <body>
+    <section class="redirect-section">
     <div class="pink-background">
       <div class="logo-top">
         <img class="logo-redirect" src="images/audienz_ws.png"/>
@@ -65,22 +66,28 @@
               </button>
             </div>
             <p style="font-weight: 200; color: white;">Click on the image to listen</p>
-          </div>
-          <div id="contact">
-            <div class="imprint-link footer">
-                <a class="footer-left" href="impressum.html">Imprint / Data Policy</a>
-                <a class="footer-right" href="agbs.html">AGBs</a>
-            </div>
+            <!-- <img src="img/After-Effects-Arrow-17.gif" width="250px"> -->
           </div>
       </div>
     </div>
+    <footer>
+    <div id="contact">
+      <div class="imprint-link footer">
+          <a class="footer-left" href="impressum.html">Imprint / Data Policy</a>
+          <a class="footer-right" href="agbs.html">AGBs</a>
+      </div>
+    </div>
+  </footer>
+  </section>
 
       <script>
         window.onload = async function() {
           const url = window.location.href;
+
           let id = url.split('?')[1];
-          if (id.indexOf("&") >= 0) {
-            id = id.substr(0, id.indexOf("&"));
+          if (id.indexOf("with") >= 0) {
+            console.log("hier")
+            id = id.substr(0, id.indexOf("with")); 
           }
           let response = await fetch('https://audienzappbackend.herokuapp.com/audios/' + id);
           if(response.ok){

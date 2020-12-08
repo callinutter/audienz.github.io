@@ -6,14 +6,14 @@
 }
 
 .hero-heading {
-    font-size: 56px;
+    font-size: 50px;
     color: #fff;
     margin-top: 10px;
     font-family: 'Poppins';
 }
 
 .hero-heading-img {
-    height: 140px;
+    height: 120px;
 }
 
 .hero-description {
@@ -34,7 +34,7 @@
 }
 
 .phone-img {
-    height: 600px;
+    height: 550px;
 }
 
 .stars {
@@ -56,7 +56,7 @@
 }
 
 .apple-store, .google-store {
-    height: 60px;
+    height: 50px;
     margin-right: 20px;
 }
 

@@ -43,6 +43,8 @@
 .hero-button {
     border-radius: 15px;
     width: 33%;
+    padding: 5px 26px;
+    font-size: 20px;
 }
 
 .hero-button:hover, .btn--outline:hover {
